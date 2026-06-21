@@ -1,17 +1,17 @@
 {
   "version": "2.24",
-  "updated_at": 1782085067,
+  "updated_at": 1782085291,
   "changed_at": 1782040094,
   "notes": "",
-  "files_signature": "5a2210680a5b42e619b9bdb6565b9039d5370e0f",
+  "files_signature": "9ea0efe440463c804c4bfca506d8c91359a185ec",
   "pending_signature": "",
   "pending_since": 0,
   "launcher": "XXTE Manager.exe",
   "files": [
     {
       "path": "XXTE Manager.exe",
-      "size": 2685686,
-      "sha1": "e9f33f1d0d05e7060869441972bd81b91ea2e001",
+      "size": 2685680,
+      "sha1": "4415ae54d79f95fb9e8d7cbd8c0a071ed442328d",
       "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/XXTE%20Manager.exe"
     },
     {
