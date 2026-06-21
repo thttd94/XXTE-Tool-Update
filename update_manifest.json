@@ -1,0 +1,1792 @@
+{
+  "version": "2.23",
+  "updated_at": 1782040094,
+  "changed_at": 1782040094,
+  "notes": "",
+  "files_signature": "edeeb648d2d36841fc33ddea2d3c89cff9501869",
+  "pending_signature": "",
+  "pending_since": 0,
+  "launcher": "XXTE Manager.exe",
+  "files": [
+    {
+      "path": "assets/xxte_manager_icon.ico",
+      "size": 41086,
+      "sha1": "5a628f168580591837fba11770f204a15cc1d630",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/assets/xxte_manager_icon.ico"
+    },
+    {
+      "path": "assets/xxte_manager_icon.jpg",
+      "size": 1629,
+      "sha1": "5215cb7fbe6419203ddc438e5501414694ea54e2",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/assets/xxte_manager_icon.jpg"
+    },
+    {
+      "path": "lua/Claimvideo48.xxt",
+      "size": 11499,
+      "sha1": "7a2683369ce925f53f916daee96f0d3aac986170",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Claimvideo48.xxt"
+    },
+    {
+      "path": "lua/event_dd_20p.xxt",
+      "size": 1405,
+      "sha1": "c37a9926a6a27da687bee2d83c41662a15d83380",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/event_dd_20p.xxt"
+    },
+    {
+      "path": "lua/event_video_180.xxt",
+      "size": 1411,
+      "sha1": "adc0c11f0053a4a83ade01d767e8eb116d2d1d0c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/event_video_180.xxt"
+    },
+    {
+      "path": "lua/floating_menu.xxt",
+      "size": 21205,
+      "sha1": "e7406c47a153d2bb6dba18bce95ff3b00b16d623",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/floating_menu.xxt"
+    },
+    {
+      "path": "lua/Group3_ClaimVideo.xxt",
+      "size": 19354,
+      "sha1": "0c5b2d7401776ec63367c919ec671b3a082c7e94",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Group3_ClaimVideo.xxt"
+    },
+    {
+      "path": "lua/Group3_EventDD20p_tiktok.xxt",
+      "size": 19380,
+      "sha1": "8d4dbb0a2f9d9b1ab27d0f985faa183482593b89",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Group3_EventDD20p_tiktok.xxt"
+    },
+    {
+      "path": "lua/Group3_EventDD20p_tiktok_lite.xxt",
+      "size": 8978,
+      "sha1": "1f8c1741f7d2e914a63ecebd9e81e1a1fca6e094",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Group3_EventDD20p_tiktok_lite.xxt"
+    },
+    {
+      "path": "lua/Group3_EventVideo180_tiktok.xxt",
+      "size": 5277,
+      "sha1": "0649fc531f99ea38456fcc200ba7306da0fd9e90",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Group3_EventVideo180_tiktok.xxt"
+    },
+    {
+      "path": "lua/Group3_EventVideo180_tiktok_lite.xxt",
+      "size": 5292,
+      "sha1": "8cefabd335e86714c49c3a02046c463277b2d7ff",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Group3_EventVideo180_tiktok_lite.xxt"
+    },
+    {
+      "path": "lua/Group3_NuoiPhoi_tiktok.xxt",
+      "size": 31874,
+      "sha1": "b35af2e042dd71921fef44a2c23bcb17e028afa7",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Group3_NuoiPhoi_tiktok.xxt"
+    },
+    {
+      "path": "lua/Group3_NuoiPhoi_tiktok_lite.xxt",
+      "size": 29477,
+      "sha1": "8499a18743f5fcb1db41c98fe4f5a718f54c89ed",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Group3_NuoiPhoi_tiktok_lite.xxt"
+    },
+    {
+      "path": "lua/home.xxt",
+      "size": 1454,
+      "sha1": "520d5330a0661f0926b5b66b726740fa1936da94",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/home.xxt"
+    },
+    {
+      "path": "lua/lib/sync_library.xxt",
+      "size": 9799,
+      "sha1": "df69d3fdb4703cab3e011287900cbf80381fe83d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/lib/sync_library.xxt"
+    },
+    {
+      "path": "lua/lock_home.xxt",
+      "size": 1513,
+      "sha1": "804850ea06cf26fc8af51e6b285110412f871c02",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/lock_home.xxt"
+    },
+    {
+      "path": "lua/LoginGGSafari.xxt",
+      "size": 9963,
+      "sha1": "be85c0e824b7a7d6953e364bc1c3ea978e613532",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/LoginGGSafari.xxt"
+    },
+    {
+      "path": "lua/NhungAcc.xxt",
+      "size": 16386,
+      "sha1": "1d3165ac35ba37484f71c17b49ffad7952498685",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/NhungAcc.xxt"
+    },
+    {
+      "path": "lua/nuoi_phoi.xxt",
+      "size": 1399,
+      "sha1": "74b6528431b095b93fc309a79d8a7aacacc80ac6",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/nuoi_phoi.xxt"
+    },
+    {
+      "path": "lua/probe_local_http.xxt",
+      "size": 3965,
+      "sha1": "ccca8eac822334ce3206341118ffb10ef6cd6af9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/probe_local_http.xxt"
+    },
+    {
+      "path": "lua/reaction.xxt",
+      "size": 1397,
+      "sha1": "ae395d6904bdaf94dd705a5e8e165ff9bd1075c6",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/reaction.xxt"
+    },
+    {
+      "path": "lua/safari.xxt",
+      "size": 1393,
+      "sha1": "77f17ad425700b1e70374f4f9ab2041ef83c98c4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/safari.xxt"
+    },
+    {
+      "path": "lua/scan_app.xxt",
+      "size": 1599,
+      "sha1": "c20537667c983d8c9a18490e5d28f3390b29538b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/scan_app.xxt"
+    },
+    {
+      "path": "lua/send_file.xxt",
+      "size": 1399,
+      "sha1": "192bf138cfb31f5900f45283f08ca4f839c304e4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/send_file.xxt"
+    },
+    {
+      "path": "lua/shadowrocket_fix_pipo_rules.xxt",
+      "size": 4619,
+      "sha1": "2a0e1c5beefb9a71bb89b42b8d4251ed9837612f",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/shadowrocket_fix_pipo_rules.xxt"
+    },
+    {
+      "path": "lua/Stage6_tiktok.xxt",
+      "size": 9959,
+      "sha1": "4467bac8348289f1a58aec9480c63bec1c19850b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/Stage6_tiktok.xxt"
+    },
+    {
+      "path": "lua/stage7/Stage7.xxt",
+      "size": 11705,
+      "sha1": "013cdef2adf727c3d2d2b18bd8511eba809f2d71",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/stage7/Stage7.xxt"
+    },
+    {
+      "path": "lua/sync_library.xxt",
+      "size": 9799,
+      "sha1": "df69d3fdb4703cab3e011287900cbf80381fe83d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/sync_library.xxt"
+    },
+    {
+      "path": "lua/TikTokLite_EdgeOCR_Receive.xxt",
+      "size": 5788,
+      "sha1": "185b2e22d64146119467ebae3e656c1c01a31035",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/TikTokLite_EdgeOCR_Receive.xxt"
+    },
+    {
+      "path": "lua/trollIPA.xxt",
+      "size": 7600,
+      "sha1": "0869d1de3996dd5ae7c6371f8a48f7973ebad3de",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/trollIPA.xxt"
+    },
+    {
+      "path": "lua/ui.xxt",
+      "size": 1385,
+      "sha1": "582346ddd993b9ddc984fc9aa3b1d56f7676e46f",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/lua/ui.xxt"
+    },
+    {
+      "path": "remote_webview_host.exe",
+      "size": 16754475,
+      "sha1": "878b918d7f57f0157e53f043d4465448ae11a387",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/remote_webview_host.exe"
+    },
+    {
+      "path": "tool_updater_helper.exe",
+      "size": 8137235,
+      "sha1": "548378c5383874b16d8521961e018381979d649d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/tool_updater_helper.exe"
+    },
+    {
+      "path": "web2/147.0.3912.98.manifest",
+      "size": 226,
+      "sha1": "3aabaf64c0d3d2db54d62719ba75021acc1330ee",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/147.0.3912.98.manifest"
+    },
+    {
+      "path": "web2/AdSelectionAttestationsPreloaded/ad-selection-attestations.dat",
+      "size": 63,
+      "sha1": "6b21cbe72f6faaa2e9a12469ac99010854afbb54",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/AdSelectionAttestationsPreloaded/ad-selection-attestations.dat"
+    },
+    {
+      "path": "web2/AdSelectionAttestationsPreloaded/manifest.json",
+      "size": 128,
+      "sha1": "c05f563170ce4cc788d222bfa22880b75760f556",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/AdSelectionAttestationsPreloaded/manifest.json"
+    },
+    {
+      "path": "web2/concrt140.dll",
+      "size": 331760,
+      "sha1": "0bc6dd07d3dc2604284ea6fe0f385d569cfe2985",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/concrt140.dll"
+    },
+    {
+      "path": "web2/Copilot.dat",
+      "size": 8192,
+      "sha1": "56eb4e628df27aba2dcbe2f58b2c512d02071d42",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Copilot.dat"
+    },
+    {
+      "path": "web2/copilot_overlay_images_100_percent.pak",
+      "size": 5424,
+      "sha1": "6d8a6a065496164314f9bdb2217bd359921a2de9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/copilot_overlay_images_100_percent.pak"
+    },
+    {
+      "path": "web2/copilot_overlay_images_200_percent.pak",
+      "size": 6178,
+      "sha1": "0e710958694ef82d1da65b9a600476da46e89060",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/copilot_overlay_images_200_percent.pak"
+    },
+    {
+      "path": "web2/copilot_overlay_unscaled_images.pak",
+      "size": 22893,
+      "sha1": "a272a144947f4eef06934d0201de31c7f2d3486a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/copilot_overlay_unscaled_images.pak"
+    },
+    {
+      "path": "web2/d3dcompiler_47.dll",
+      "size": 4751608,
+      "sha1": "2a313ac22e2a3c3aafa5e91f353aca58b4d4e3f8",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/d3dcompiler_47.dll"
+    },
+    {
+      "path": "web2/delegatedWebFeatures.sccd",
+      "size": 18112,
+      "sha1": "df25a2c9e1e9fa05805da69ff41337b9f59755fb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/delegatedWebFeatures.sccd"
+    },
+    {
+      "path": "web2/dual_engine_adapter_x64.dll",
+      "size": 5144816,
+      "sha1": "0070eee304ebc4307ac6c71ddb205013d06e2776",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/dual_engine_adapter_x64.dll"
+    },
+    {
+      "path": "web2/dxcompiler.dll",
+      "size": 20448072,
+      "sha1": "e237633fe780a9705630ef03f6abca89e65070a0",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/dxcompiler.dll"
+    },
+    {
+      "path": "web2/dxil.dll",
+      "size": 1519880,
+      "sha1": "9f2bcf1e49094d44d402b2a06c57c0f7af27f94a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/dxil.dll"
+    },
+    {
+      "path": "web2/EBWebView/x64/EmbeddedBrowserWebView.dll",
+      "size": 8570696,
+      "sha1": "4c24348252bc183f506d9e9ea87b17ba33346690",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/EBWebView/x64/EmbeddedBrowserWebView.dll"
+    },
+    {
+      "path": "web2/EBWebView/x86/EmbeddedBrowserWebView.dll",
+      "size": 5461872,
+      "sha1": "ad7f3d4dcbcc8c88d1e686a16e980fbfcc7c6a16",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/EBWebView/x86/EmbeddedBrowserWebView.dll"
+    },
+    {
+      "path": "web2/Edge.dat",
+      "size": 12288,
+      "sha1": "89485088df70c4e6d36654ebc2e78c5c76c98e05",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Edge.dat"
+    },
+    {
+      "path": "web2/edge_feedback/camera_mf_trace.wprp",
+      "size": 24910,
+      "sha1": "73f6340be4c6b5af09673dacdf1aab7405b966aa",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/edge_feedback/camera_mf_trace.wprp"
+    },
+    {
+      "path": "web2/edge_feedback/mf_trace.wprp",
+      "size": 12735,
+      "sha1": "e9fb430500eb4f634935ae7dd1ef8395828ddf0d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/edge_feedback/mf_trace.wprp"
+    },
+    {
+      "path": "web2/EdgeWebView.dat",
+      "size": 8192,
+      "sha1": "f7e3905b108d5db10415a35a7214ec7c4ede7654",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/EdgeWebView.dat"
+    },
+    {
+      "path": "web2/elevated_tracing_service.exe",
+      "size": 5161280,
+      "sha1": "47cd5c1a04bfc4071895bafee549944c9f8c0258",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/elevated_tracing_service.exe"
+    },
+    {
+      "path": "web2/eventlog_provider.dll",
+      "size": 16200,
+      "sha1": "05ca4402e1875020fe06d9367dffc561b077f3d8",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/eventlog_provider.dll"
+    },
+    {
+      "path": "web2/Extensions/external_extensions.json",
+      "size": 99,
+      "sha1": "fcaf575897048f55b422a6dbeba943b5d550a908",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Extensions/external_extensions.json"
+    },
+    {
+      "path": "web2/ffmpeg.dll",
+      "size": 3088712,
+      "sha1": "8d8296593ad897babf2c8e36a3f3e20a7c267d32",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/ffmpeg.dll"
+    },
+    {
+      "path": "web2/icudtl.dat",
+      "size": 12381168,
+      "sha1": "31c41b2070a8e9b7a45c11e5b8380431648a5416",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/icudtl.dat"
+    },
+    {
+      "path": "web2/Installer/copilot_setup.exe",
+      "size": 30536,
+      "sha1": "9075f5b1fa5d394ca748e0ccc4eea92db4e1dfe2",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Installer/copilot_setup.exe"
+    },
+    {
+      "path": "web2/learning_tools.dll",
+      "size": 1298760,
+      "sha1": "4ec442b49ba7a726501e9f7c184a30781de386da",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/learning_tools.dll"
+    },
+    {
+      "path": "web2/libEGL.dll",
+      "size": 511240,
+      "sha1": "c5728c07f21ff4b8070403b4104bb5f8c6dbfee0",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/libEGL.dll"
+    },
+    {
+      "path": "web2/libGLESv2.dll",
+      "size": 7087328,
+      "sha1": "b41903bc6923d07bfc3e449ff3ac3e2173921c21",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/libGLESv2.dll"
+    },
+    {
+      "path": "web2/Locales/af.pak",
+      "size": 970716,
+      "sha1": "a2cb447d2d7911938ad2c25847f3b1c921252b41",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/af.pak"
+    },
+    {
+      "path": "web2/Locales/am.pak",
+      "size": 1425874,
+      "sha1": "2145383d5ef6637b3c3e2563d166a6ba48f0a08b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/am.pak"
+    },
+    {
+      "path": "web2/Locales/ar.pak",
+      "size": 1475423,
+      "sha1": "88e1a88ae8b84d64a2f5b4d0d65336781e047fbc",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ar.pak"
+    },
+    {
+      "path": "web2/Locales/as.pak",
+      "size": 2102207,
+      "sha1": "65ba507077228ab05bc22425af3c21bd0dd97b39",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/as.pak"
+    },
+    {
+      "path": "web2/Locales/az.pak",
+      "size": 1111568,
+      "sha1": "d81d32f2095c014f34b7421a049bc46c3cb85c6e",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/az.pak"
+    },
+    {
+      "path": "web2/Locales/bg.pak",
+      "size": 1663441,
+      "sha1": "ce9cdbe10dffe2c521181f5bd5fd2b3c6f8eede3",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/bg.pak"
+    },
+    {
+      "path": "web2/Locales/bn-IN.pak",
+      "size": 2175333,
+      "sha1": "acfa2d801787ec7a744dd5e36a14d560b786c180",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/bn-IN.pak"
+    },
+    {
+      "path": "web2/Locales/bs.pak",
+      "size": 1036723,
+      "sha1": "2664dfc6566d1e259def304a6f37781a347108b5",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/bs.pak"
+    },
+    {
+      "path": "web2/Locales/ca-Es-VALENCIA.pak",
+      "size": 1084860,
+      "sha1": "7ed968592185be25ab43ccb3e2e690d0627f1b8c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ca-Es-VALENCIA.pak"
+    },
+    {
+      "path": "web2/Locales/ca.pak",
+      "size": 1088086,
+      "sha1": "d5602816cf813bdf573e6dc3aee0d17ac9cf86af",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ca.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_af.pak",
+      "size": 66832,
+      "sha1": "f212857e7985b2b356b355d301362a082bd405b0",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_af.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_am.pak",
+      "size": 97062,
+      "sha1": "1a60f40e74088baa60f133367b1c7a89e2ab9603",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_am.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ar.pak",
+      "size": 93503,
+      "sha1": "84996f0c58cb49024940a3ebb80676a9b05c985c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ar.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_as.pak",
+      "size": 144854,
+      "sha1": "23dbd26223a10abc8aae66062a5d8cbe02568e50",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_as.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_az.pak",
+      "size": 75053,
+      "sha1": "32371718c88429ca5b6504e86c5cbc2631e21620",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_az.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_bg.pak",
+      "size": 110454,
+      "sha1": "2b327e2535a748805ca3fed8ce23a97f789ba4b6",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_bg.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_bn-IN.pak",
+      "size": 151422,
+      "sha1": "23f11ce444b77bcc9d1abfb93139d6fdedd78d19",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_bn-IN.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_bs.pak",
+      "size": 69374,
+      "sha1": "3ed7043832524ea996ac0f728f6562cfaf2d804c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_bs.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ca-Es-VALENCIA.pak",
+      "size": 73243,
+      "sha1": "4c8158237655c8ecb2ac0c855691c44d63cbeb4c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ca-Es-VALENCIA.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ca.pak",
+      "size": 73063,
+      "sha1": "51de2d6165ae79b26509f7821781cc40fae42458",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ca.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_cs.pak",
+      "size": 71232,
+      "sha1": "1df3ed1c597e19b6e58ff1d64bb39dab0f9f1ec4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_cs.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_cy.pak",
+      "size": 71169,
+      "sha1": "cbea2653064164658caa0cad598c5b1b98022ea5",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_cy.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_da.pak",
+      "size": 66391,
+      "sha1": "f1c772accee94791f3ef14d7f8e265c8cd6326ba",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_da.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_de.pak",
+      "size": 74048,
+      "sha1": "f349d32fee6b143675fa2af61cc64dfc633c8229",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_de.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_el.pak",
+      "size": 124945,
+      "sha1": "fbb64cf05ce18d020e5d9c16b1110323b3bc20ab",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_el.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_en-GB.pak",
+      "size": 61176,
+      "sha1": "04d8515c8177c5449911c2b6547e1e6f68c99242",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_en-GB.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_en-US.pak",
+      "size": 60571,
+      "sha1": "0b4beeb8c2c902270a2596fc3408f7220cb3d070",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_en-US.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_es-419.pak",
+      "size": 71496,
+      "sha1": "02462c0d8faf9549455fb1886a76f2d3300909f0",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_es-419.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_es.pak",
+      "size": 71297,
+      "sha1": "197e158103ba5cf4536fafd63c9c59cc35da0c86",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_es.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_et.pak",
+      "size": 65444,
+      "sha1": "fe40d5e3a9fd0a399ed16dfcd3309a3ab9037222",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_et.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_eu.pak",
+      "size": 67237,
+      "sha1": "cb78ba9c5c53260d583714153b89c89fa5c6dd65",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_eu.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_fa.pak",
+      "size": 104116,
+      "sha1": "95fa77c74e70b535d9527f0ce0810bc8fdf9c5b9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_fa.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_fi.pak",
+      "size": 68828,
+      "sha1": "cbefc401279c954bdb0e316588b5587eeeaf796d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_fi.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_fil.pak",
+      "size": 74871,
+      "sha1": "fedec69723cc536f5b26b0f0834a3cedfb2a9eb0",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_fil.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_fr-CA.pak",
+      "size": 78666,
+      "sha1": "ffd3046cc8cfaa27a17945f8d0c0ae077ccfc317",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_fr-CA.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_fr.pak",
+      "size": 78200,
+      "sha1": "e48737aaee6d60205a890ac967233cfb97a7627e",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_fr.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ga.pak",
+      "size": 78247,
+      "sha1": "f98976a41041ca5d8d2502b78e5de4b5bc97f524",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ga.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_gd.pak",
+      "size": 79824,
+      "sha1": "2606c87cc1da7a07321dff92fc9af7d4faad181a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_gd.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_gl.pak",
+      "size": 69685,
+      "sha1": "26aaa403b227f2e92be578125e253d9c90ce4ce7",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_gl.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_gu.pak",
+      "size": 146508,
+      "sha1": "25c9235aa01400529b8f0b77dacd81d6bcfaacfb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_gu.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_he.pak",
+      "size": 84595,
+      "sha1": "7b77fded3152a2d22cadd4675603d4201b35630b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_he.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_hi.pak",
+      "size": 143071,
+      "sha1": "89acb8a554c77e0d67a12e9aec15f373e8c987a7",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_hi.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_hr.pak",
+      "size": 70072,
+      "sha1": "bdd5f06f6010ba26da7b4a6def7c4de2841432f8",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_hr.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_hu.pak",
+      "size": 75154,
+      "sha1": "23212ec3d4a054f9a1ffec5c36ee2add48c48a87",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_hu.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_id.pak",
+      "size": 66577,
+      "sha1": "b48503412a160567e8a997880e0af8b4124dae2d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_id.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_is.pak",
+      "size": 70316,
+      "sha1": "d6fef7af67b372f6dc3fb15eee1d1dcb69d2774e",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_is.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_it.pak",
+      "size": 71216,
+      "sha1": "73dac06e1dd8f0483b58aeb663cf7593e77b3567",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_it.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ja.pak",
+      "size": 85956,
+      "sha1": "529150ae986752fe894c4eda886001bf44a6799f",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ja.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ka.pak",
+      "size": 154306,
+      "sha1": "9ac1f368c75d07cb56eb4fcaae7d071f1fbe3493",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ka.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_kk.pak",
+      "size": 113933,
+      "sha1": "2a5c67d040144bf654ce21b372ae94b86d05861b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_kk.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_km.pak",
+      "size": 155665,
+      "sha1": "a6575c16a67d9eb7bd2bf233ff0cb0b6c8800b31",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_km.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_kn.pak",
+      "size": 157616,
+      "sha1": "26b56adf8eb298d7e98279490c03cabb47c818d1",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_kn.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ko.pak",
+      "size": 74265,
+      "sha1": "49e1680e7220dff5cb299d094686ca71a48a9b1b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ko.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_kok.pak",
+      "size": 137048,
+      "sha1": "514fa7fcc30bfdc4cd12ab36278506fb6f7393c4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_kok.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_lb.pak",
+      "size": 71820,
+      "sha1": "d58c42bbbc383a1f9a9205505434a1187b21466b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_lb.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_lo.pak",
+      "size": 141120,
+      "sha1": "d4081ffc2e5bce18ffbbd305d84751c458a1f62d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_lo.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_lt.pak",
+      "size": 74104,
+      "sha1": "1d9bf28e2567d342375016cbc0b1dbd4ac0c8bd9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_lt.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_lv.pak",
+      "size": 71576,
+      "sha1": "e7e326389041dee1861107f58b59fbb6adc63985",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_lv.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_mi.pak",
+      "size": 72388,
+      "sha1": "ee55d0eb367b798712ed28a83941620aa6183757",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_mi.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_mk.pak",
+      "size": 112148,
+      "sha1": "0d3cba25d1d781c30bbf6b7e38c20489370f8a13",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_mk.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ml.pak",
+      "size": 175163,
+      "sha1": "616707a39081bd6f340e86a825693516e71dd413",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ml.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_mr.pak",
+      "size": 146859,
+      "sha1": "4c4a502a8a348870adf0454b8c5285e49faf7240",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_mr.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ms.pak",
+      "size": 68974,
+      "sha1": "e68ceaf48fe3b93c226056530f60d24e771089bb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ms.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_mt.pak",
+      "size": 74344,
+      "sha1": "388e8f0e5225b02e70241f9967977094e6bde301",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_mt.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_nb.pak",
+      "size": 64838,
+      "sha1": "58a15db036768406bcc6a95b7c029699d421d037",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_nb.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ne.pak",
+      "size": 151209,
+      "sha1": "e12e108b21d819d3c36ea9d062a5acb0174f93bc",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ne.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_nl.pak",
+      "size": 69769,
+      "sha1": "bda6a6b2dbf8f1cd96622931d6426c37609cd8c3",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_nl.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_nn.pak",
+      "size": 64714,
+      "sha1": "d4367c230e90c2ea6b9645f89398667c4179f633",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_nn.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_or.pak",
+      "size": 157700,
+      "sha1": "6c0bf4a7173fc39258a6fae19431091748aecabd",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_or.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_pa.pak",
+      "size": 150247,
+      "sha1": "969c1be76abbcbe70c2ecb1f895169f02d078d40",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_pa.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_pl.pak",
+      "size": 76552,
+      "sha1": "de2c61cb1d5a11ce9f8b94777c102337d7d64124",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_pl.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_pt-BR.pak",
+      "size": 69781,
+      "sha1": "e1b57c182120d7a83a88741307d5a6f0670d82bb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_pt-BR.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_pt-PT.pak",
+      "size": 72125,
+      "sha1": "254e99b4d6bec5c509f010877178bbe4fbc76ac6",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_pt-PT.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_qu.pak",
+      "size": 72220,
+      "sha1": "74ac4a354a65919f9d4b901c71e33a505ec82bee",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_qu.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ro.pak",
+      "size": 73087,
+      "sha1": "e8cd29989bd9d60bfe80a25e1452fb24a52f66e2",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ro.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ru.pak",
+      "size": 111646,
+      "sha1": "55cb13a446f59ca160ef55dfba521e663dd1b33f",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ru.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_sk.pak",
+      "size": 72651,
+      "sha1": "6bcc5e4a0930200951223f788d1113f0ad657ee4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_sk.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_sl.pak",
+      "size": 70326,
+      "sha1": "194df6b88b32814337ee95a24ef55b1e3eca7a36",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_sl.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_sq.pak",
+      "size": 72240,
+      "sha1": "56e23bd8148f1938afe1d22dbf0dbe8b4eeb0c88",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_sq.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_sr-Cyrl-BA.pak",
+      "size": 107723,
+      "sha1": "1fa9a0f39e45d51890cfaff3486c2fe213fcdc58",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_sr-Cyrl-BA.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_sr-Latn-RS.pak",
+      "size": 70286,
+      "sha1": "04da7ff774f0109c80d75291a8b2799c6f28186a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_sr-Latn-RS.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_sr.pak",
+      "size": 109374,
+      "sha1": "a64a591ec59e66faead74281a1db02bd6b56fe72",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_sr.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_sv.pak",
+      "size": 65851,
+      "sha1": "14a70160499dc9a8d1f90f21afa4be8bd2752b70",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_sv.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ta.pak",
+      "size": 169677,
+      "sha1": "2263cc301f662049eb4295a67fdd915cd96b4f02",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ta.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_te.pak",
+      "size": 156359,
+      "sha1": "8440fc745877317f8c06b5a3c7c0c3c4b8ad6331",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_te.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_th.pak",
+      "size": 138186,
+      "sha1": "5e91a3537fde75f5386f069db2148ff013b2b123",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_th.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_tr.pak",
+      "size": 71774,
+      "sha1": "b4009757d627bc4e4ebdc1c6460af034003ad5b3",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_tr.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_tt.pak",
+      "size": 109203,
+      "sha1": "024e4a56b6c60c7a3ff3e97d76061b2907f76b7d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_tt.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ug.pak",
+      "size": 110079,
+      "sha1": "b705dca4dc862a08f326ea14aff9cfe0c3805376",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ug.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_uk.pak",
+      "size": 108020,
+      "sha1": "8ff1a3e13cb9e659ddb07e2a2d93d091d2148208",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_uk.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_ur.pak",
+      "size": 105990,
+      "sha1": "bf9ce3cc7edf60e7699bb377fbd916de41a6d0b9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_ur.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_vi.pak",
+      "size": 82056,
+      "sha1": "8c68919885f5569b1ffe70e2a75d7ff037d86521",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_vi.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_zh-CN.pak",
+      "size": 57636,
+      "sha1": "40bfaba8590f5f0ce319b233891e7e888eb8c008",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_zh-CN.pak"
+    },
+    {
+      "path": "web2/Locales/copilot_overlay_strings_zh-TW.pak",
+      "size": 59823,
+      "sha1": "98f5bac46f4c347ba95047fff0862941fc68cef7",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/copilot_overlay_strings_zh-TW.pak"
+    },
+    {
+      "path": "web2/Locales/cs.pak",
+      "size": 1084398,
+      "sha1": "35fe0c160cd7a96f87ba23485e3d33c592b9f123",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/cs.pak"
+    },
+    {
+      "path": "web2/Locales/cy.pak",
+      "size": 1070220,
+      "sha1": "78e9abf03711d02d43dc6bb1b2f338dd7804d760",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/cy.pak"
+    },
+    {
+      "path": "web2/Locales/da.pak",
+      "size": 970912,
+      "sha1": "facd67084cc02670beb50425eaca7e90be3d83e8",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/da.pak"
+    },
+    {
+      "path": "web2/Locales/de.pak",
+      "size": 1081807,
+      "sha1": "a716ffec1084bdfdfe455ba8839adaa1349ba054",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/de.pak"
+    },
+    {
+      "path": "web2/Locales/el.pak",
+      "size": 1840085,
+      "sha1": "37201952881b99ab2d83dd4086e0f745083bcc69",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/el.pak"
+    },
+    {
+      "path": "web2/Locales/en-GB.pak",
+      "size": 885291,
+      "sha1": "68bb9b5caab527eaa70f04c64f74be08029291eb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/en-GB.pak"
+    },
+    {
+      "path": "web2/Locales/en-US.pak",
+      "size": 868617,
+      "sha1": "eb340bd23b59a2aecf7a2ee0f81de3e7eca7b53c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/en-US.pak"
+    },
+    {
+      "path": "web2/Locales/es-419.pak",
+      "size": 1073020,
+      "sha1": "dfa63bf9e9d9cddc5f3f5cc44c4f88049b7c6d14",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/es-419.pak"
+    },
+    {
+      "path": "web2/Locales/es.pak",
+      "size": 1073825,
+      "sha1": "54ef18a0062de66f8ee1ef28aa45dd995bbe7c0b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/es.pak"
+    },
+    {
+      "path": "web2/Locales/et.pak",
+      "size": 960981,
+      "sha1": "4894bc2dcdf25ad521903753478300f282371824",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/et.pak"
+    },
+    {
+      "path": "web2/Locales/eu.pak",
+      "size": 999387,
+      "sha1": "93200fa7f313da051dd0ce31a0a1fe28841a98f6",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/eu.pak"
+    },
+    {
+      "path": "web2/Locales/fa.pak",
+      "size": 1498700,
+      "sha1": "f2068a19fc50fd57a1cdfcddcd88292669da16fb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/fa.pak"
+    },
+    {
+      "path": "web2/Locales/fi.pak",
+      "size": 1004112,
+      "sha1": "d63198776f606d3a794e0c60c408c449a88c098d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/fi.pak"
+    },
+    {
+      "path": "web2/Locales/fil.pak",
+      "size": 1082335,
+      "sha1": "f6cd0b2e4846c2c11b949fcebe8a85d8e2fe41b9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/fil.pak"
+    },
+    {
+      "path": "web2/Locales/fr-CA.pak",
+      "size": 1154345,
+      "sha1": "9790e59b137bfaaf1d656476a36983f2d66de6ae",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/fr-CA.pak"
+    },
+    {
+      "path": "web2/Locales/fr.pak",
+      "size": 1147001,
+      "sha1": "527743882cb153973e549923e4b6073b0e1e772c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/fr.pak"
+    },
+    {
+      "path": "web2/Locales/ga.pak",
+      "size": 1151605,
+      "sha1": "0dcbcc79a8518ed87bf681b6514c7d2552b1aae4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ga.pak"
+    },
+    {
+      "path": "web2/Locales/gd.pak",
+      "size": 1209987,
+      "sha1": "ee6cdbf47f4f291a07df4c2b8d0d3d92096c0184",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/gd.pak"
+    },
+    {
+      "path": "web2/Locales/gl.pak",
+      "size": 1028138,
+      "sha1": "04bd1ef6e2d4968768df0d782d8687c8d633962e",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/gl.pak"
+    },
+    {
+      "path": "web2/Locales/gu.pak",
+      "size": 2057300,
+      "sha1": "8dd27a5e2431d678c10a09ed8bb9c870d5381870",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/gu.pak"
+    },
+    {
+      "path": "web2/Locales/he.pak",
+      "size": 1244335,
+      "sha1": "d32c9b5c6eef5a7e4f85b8c4e5d536c4d7e58aff",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/he.pak"
+    },
+    {
+      "path": "web2/Locales/hi.pak",
+      "size": 2054245,
+      "sha1": "b3fc7695c91a870fd38c6249c2142befcd5cacfb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/hi.pak"
+    },
+    {
+      "path": "web2/Locales/hr.pak",
+      "size": 1048758,
+      "sha1": "a67505294308a1f0555aba4d9591794d02ab4a47",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/hr.pak"
+    },
+    {
+      "path": "web2/Locales/hu.pak",
+      "size": 1110747,
+      "sha1": "756f12b9465ece86a2937e6cd568a97e469172de",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/hu.pak"
+    },
+    {
+      "path": "web2/Locales/id.pak",
+      "size": 948973,
+      "sha1": "9d536c83c88e82e3e8067937901675700892fd98",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/id.pak"
+    },
+    {
+      "path": "web2/Locales/is.pak",
+      "size": 1017103,
+      "sha1": "e695d2e66d0d460bf3b94ee3515b35311ed38d38",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/is.pak"
+    },
+    {
+      "path": "web2/Locales/it.pak",
+      "size": 1060413,
+      "sha1": "75b1f2696d861e37cf108a4a485cba2e3d0a72f6",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/it.pak"
+    },
+    {
+      "path": "web2/Locales/ja.pak",
+      "size": 1238886,
+      "sha1": "900a8c61f680715bdfb2832a16ae116a2beb2ac4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ja.pak"
+    },
+    {
+      "path": "web2/Locales/ka.pak",
+      "size": 2299050,
+      "sha1": "bc577f451b36548bf37f383e5c75b0bc2772eddb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ka.pak"
+    },
+    {
+      "path": "web2/Locales/kk.pak",
+      "size": 1628817,
+      "sha1": "28cb25507d361725ba99b6a0e888f558ac4f00ec",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/kk.pak"
+    },
+    {
+      "path": "web2/Locales/km.pak",
+      "size": 2211835,
+      "sha1": "ecc102e66889216173ca65c07c6f34a90c5f03ee",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/km.pak"
+    },
+    {
+      "path": "web2/Locales/kn.pak",
+      "size": 2299196,
+      "sha1": "6ee5d580e61b83559daa8c2f7bbf83ebbc01a6ed",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/kn.pak"
+    },
+    {
+      "path": "web2/Locales/ko.pak",
+      "size": 1045366,
+      "sha1": "d354397a3fb8f4da658244f34c18e8506f6f44a9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ko.pak"
+    },
+    {
+      "path": "web2/Locales/kok.pak",
+      "size": 1989141,
+      "sha1": "aa9ee32bc72cd6e405eafca18bd464dbda29fedb",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/kok.pak"
+    },
+    {
+      "path": "web2/Locales/lb.pak",
+      "size": 1046205,
+      "sha1": "50be9efd2dc2b2869da8744a210c16b26109cd40",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/lb.pak"
+    },
+    {
+      "path": "web2/Locales/lo.pak",
+      "size": 2010297,
+      "sha1": "7ae227f7576918edb82d1457a36d2e217e955802",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/lo.pak"
+    },
+    {
+      "path": "web2/Locales/lt.pak",
+      "size": 1095954,
+      "sha1": "8b04c23a6bcc362bfca833a4c52b1ca60b2302ab",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/lt.pak"
+    },
+    {
+      "path": "web2/Locales/lv.pak",
+      "size": 1069485,
+      "sha1": "e2e048f10e93d2f7908a55d33c4c8a001184070a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/lv.pak"
+    },
+    {
+      "path": "web2/Locales/mi.pak",
+      "size": 1045651,
+      "sha1": "847de03829113a897585360fbb63a26cb0811a3f",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/mi.pak"
+    },
+    {
+      "path": "web2/Locales/mk.pak",
+      "size": 1661614,
+      "sha1": "663d3b89446dbc45b75e1372ae8549d1ac4c0e19",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/mk.pak"
+    },
+    {
+      "path": "web2/Locales/ml.pak",
+      "size": 2515739,
+      "sha1": "404611f246b996c2ee753943dcbf91c8741f5037",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ml.pak"
+    },
+    {
+      "path": "web2/Locales/mr.pak",
+      "size": 2073352,
+      "sha1": "a0b3af2323cfd2997f1ce8996e5845d5f830da46",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/mr.pak"
+    },
+    {
+      "path": "web2/Locales/ms.pak",
+      "size": 977625,
+      "sha1": "35a88cedf25d9b764422091e111602bbb10394c8",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ms.pak"
+    },
+    {
+      "path": "web2/Locales/mt.pak",
+      "size": 1113633,
+      "sha1": "56b58228750eedf03124b696c0cac77191501f9b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/mt.pak"
+    },
+    {
+      "path": "web2/Locales/nb.pak",
+      "size": 946006,
+      "sha1": "c6b0864e796aadaf0d7cc206c75c76a1716e1887",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/nb.pak"
+    },
+    {
+      "path": "web2/Locales/ne.pak",
+      "size": 2206452,
+      "sha1": "3b2ccec10f0ab0f99da886a118253f83e8be2d15",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ne.pak"
+    },
+    {
+      "path": "web2/Locales/nl.pak",
+      "size": 1011736,
+      "sha1": "03fcbbd1b488ecfe311c51315f5def13b56c8ac5",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/nl.pak"
+    },
+    {
+      "path": "web2/Locales/nn.pak",
+      "size": 950176,
+      "sha1": "ddbbf563299120b3fe5694d178355c896412a45d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/nn.pak"
+    },
+    {
+      "path": "web2/Locales/or.pak",
+      "size": 2288717,
+      "sha1": "4148de242c6d0fc775b2f26568dc9d270941d034",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/or.pak"
+    },
+    {
+      "path": "web2/Locales/pa.pak",
+      "size": 2100460,
+      "sha1": "dc45545369ea6f267f0ce730306fd9f46481dc5a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/pa.pak"
+    },
+    {
+      "path": "web2/Locales/pl.pak",
+      "size": 1127520,
+      "sha1": "9e619ba7f132ac37760cc6d41689ee4c876f6ea6",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/pl.pak"
+    },
+    {
+      "path": "web2/Locales/pt-BR.pak",
+      "size": 1041856,
+      "sha1": "7fb5f26445c32515a58b9a882f2c32e096cf5289",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/pt-BR.pak"
+    },
+    {
+      "path": "web2/Locales/pt-PT.pak",
+      "size": 1070241,
+      "sha1": "1850e8cf4afc74325686cfc13b5606ee6d2212ab",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/pt-PT.pak"
+    },
+    {
+      "path": "web2/Locales/qu.pak",
+      "size": 1070811,
+      "sha1": "bdd8dafd3df3c51e7b34b5897fa274ee5674052f",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/qu.pak"
+    },
+    {
+      "path": "web2/Locales/ro.pak",
+      "size": 1084203,
+      "sha1": "af6bf1f4523c60455a2a81dea6f04bdd0e609131",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ro.pak"
+    },
+    {
+      "path": "web2/Locales/ru.pak",
+      "size": 1701927,
+      "sha1": "f4a7c34b79d1f3459788cdda7fa7b61b79ecdb04",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ru.pak"
+    },
+    {
+      "path": "web2/Locales/sk.pak",
+      "size": 1103508,
+      "sha1": "76527f75104a2623765808b1a69737f951bda304",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/sk.pak"
+    },
+    {
+      "path": "web2/Locales/sl.pak",
+      "size": 1048076,
+      "sha1": "51af40fa2dc7f42aadda612936976fbee57aa457",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/sl.pak"
+    },
+    {
+      "path": "web2/Locales/sq.pak",
+      "size": 1061393,
+      "sha1": "8b9947641e6361447246a3b74049823fe5003f13",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/sq.pak"
+    },
+    {
+      "path": "web2/Locales/sr-Cyrl-BA.pak",
+      "size": 1608395,
+      "sha1": "4087947ea86eabcd6db65ea1a649b0f8c10256c0",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/sr-Cyrl-BA.pak"
+    },
+    {
+      "path": "web2/Locales/sr-Latn-RS.pak",
+      "size": 1040726,
+      "sha1": "f0fa45076bce272ae6750204dfed0f98b3ac8c98",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/sr-Latn-RS.pak"
+    },
+    {
+      "path": "web2/Locales/sr.pak",
+      "size": 1623646,
+      "sha1": "670a376b727d9a29b96f0a199a07431b5a08e230",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/sr.pak"
+    },
+    {
+      "path": "web2/Locales/sv.pak",
+      "size": 972011,
+      "sha1": "4007a12fc908ea56e7942b096c12ac2ed407a6bd",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/sv.pak"
+    },
+    {
+      "path": "web2/Locales/ta.pak",
+      "size": 2508245,
+      "sha1": "1d06f0bbcdb9e22064f273cfa081b8c106ce11b0",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ta.pak"
+    },
+    {
+      "path": "web2/Locales/te.pak",
+      "size": 2267161,
+      "sha1": "d14d71255af63a842adaeb37b65cf0fa8c6d26bd",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/te.pak"
+    },
+    {
+      "path": "web2/Locales/th.pak",
+      "size": 1987093,
+      "sha1": "2eeec671853a470bd90e95a19b72ff0dd74d5c2d",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/th.pak"
+    },
+    {
+      "path": "web2/Locales/tr.pak",
+      "size": 1040384,
+      "sha1": "faa85420eb43cf44d3297c0353b432bba82ce9d9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/tr.pak"
+    },
+    {
+      "path": "web2/Locales/tt.pak",
+      "size": 1632186,
+      "sha1": "93dd796b65d86ad219956b7d9ef422070ffdf59b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/tt.pak"
+    },
+    {
+      "path": "web2/Locales/ug.pak",
+      "size": 1577173,
+      "sha1": "72d76d7432e1b8edceffa804549650edcb32eb5c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ug.pak"
+    },
+    {
+      "path": "web2/Locales/uk.pak",
+      "size": 1666207,
+      "sha1": "7452531df5f6ef4c87cc99456458771a1245ead4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/uk.pak"
+    },
+    {
+      "path": "web2/Locales/ur.pak",
+      "size": 1517820,
+      "sha1": "1231de748727f2f3d0bdfe49061d4592604f27a2",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/ur.pak"
+    },
+    {
+      "path": "web2/Locales/vi.pak",
+      "size": 1189034,
+      "sha1": "5512e4880c070e54e09bbb840ace33d2d57a80ab",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/vi.pak"
+    },
+    {
+      "path": "web2/Locales/zh-CN.pak",
+      "size": 833612,
+      "sha1": "f7a25f0296d57d77445432af7788d5664841d5ab",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/zh-CN.pak"
+    },
+    {
+      "path": "web2/Locales/zh-TW.pak",
+      "size": 860446,
+      "sha1": "8afb94c42d89d9fb42dfad0d1067c2c898a68a53",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Locales/zh-TW.pak"
+    },
+    {
+      "path": "web2/MEIPreload/manifest.json",
+      "size": 238,
+      "sha1": "c7317f2d2414c991c21205ba3c68a187b997e3c1",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/MEIPreload/manifest.json"
+    },
+    {
+      "path": "web2/MEIPreload/preloaded_data.pb",
+      "size": 8254,
+      "sha1": "a691f5c9877079193c1f7dfb16dbc30bb0372ec9",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/MEIPreload/preloaded_data.pb"
+    },
+    {
+      "path": "web2/microsoft_shell_integration.dll",
+      "size": 460144,
+      "sha1": "3a9bb710ea5f393323be5a5495a3d318de77efbf",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/microsoft_shell_integration.dll"
+    },
+    {
+      "path": "web2/mip_core.dll",
+      "size": 5435232,
+      "sha1": "6af7744dfa8af85bc2d54954f1586e968dd2a3ec",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/mip_core.dll"
+    },
+    {
+      "path": "web2/mip_core_gn.dll",
+      "size": 8563016,
+      "sha1": "93bc2efa027b0a9a2660c4b71528e197689ddb70",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/mip_core_gn.dll"
+    },
+    {
+      "path": "web2/mip_protection_sdk.dll",
+      "size": 2501432,
+      "sha1": "9f8f3001e81b4d64a1833e071782f22caf44d7ba",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/mip_protection_sdk.dll"
+    },
+    {
+      "path": "web2/mscopilot.exe",
+      "size": 4582256,
+      "sha1": "ecd9e4838137f46f0919b237f51c28f4edb7863f",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/mscopilot.exe"
+    },
+    {
+      "path": "web2/msedge.dll",
+      "size": 318642544,
+      "sha1": "924d7c5459a94da6596edd73a5e0a59ac72a5edc",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msedge.dll"
+    },
+    {
+      "path": "web2/msedge.dll.sig",
+      "size": 1389,
+      "sha1": "cf6b2edd20bdf8db24fa5ff6304aa5d5f3a1aa0a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msedge.dll.sig"
+    },
+    {
+      "path": "web2/msedge_100_percent.pak",
+      "size": 1234211,
+      "sha1": "2e51beb71a15fe0331f62683facabbd6026599f0",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msedge_100_percent.pak"
+    },
+    {
+      "path": "web2/msedge_200_percent.pak",
+      "size": 1935747,
+      "sha1": "17d07195f6cfdadceb213533111f4deb2dfc33fd",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msedge_200_percent.pak"
+    },
+    {
+      "path": "web2/msedge_elf.dll",
+      "size": 4827976,
+      "sha1": "93b72a68fab656cf6d136293214f5bd0dee63c7e",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msedge_elf.dll"
+    },
+    {
+      "path": "web2/msedge_wer.dll",
+      "size": 118600,
+      "sha1": "8e04140562e4ad76322512cddfe6ea5bb5950e65",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msedge_wer.dll"
+    },
+    {
+      "path": "web2/msedgewebview2.exe",
+      "size": 4485448,
+      "sha1": "e8857919f1ec6d26242af55948f7af76ab2587ea",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msedgewebview2.exe"
+    },
+    {
+      "path": "web2/msedgewebview2.exe.sig",
+      "size": 1389,
+      "sha1": "db0bacddc4301ca0a2ab86eb60774b72dca9124a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msedgewebview2.exe.sig"
+    },
+    {
+      "path": "web2/mspdf.dll",
+      "size": 18959216,
+      "sha1": "ff55ffe41aee12619b3d3383a7740060598567bf",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/mspdf.dll"
+    },
+    {
+      "path": "web2/msvcp140.dll",
+      "size": 563616,
+      "sha1": "53db54cf6c94ce3314322b32acdb1b536fcabd83",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msvcp140.dll"
+    },
+    {
+      "path": "web2/msvcp140_codecvt_ids.dll",
+      "size": 41496,
+      "sha1": "ca7c8f71a8341fa3e270a9f3bc129a65d4a9884a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/msvcp140_codecvt_ids.dll"
+    },
+    {
+      "path": "web2/notification_helper.exe",
+      "size": 2560368,
+      "sha1": "3d5136593d8e62187c945989bc10c65cbee1461b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/notification_helper.exe"
+    },
+    {
+      "path": "web2/oneauth.dll",
+      "size": 5907312,
+      "sha1": "ae733e7035fda4bd55769cd2fc102109e796b594",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/oneauth.dll"
+    },
+    {
+      "path": "web2/oneds.dll",
+      "size": 3330416,
+      "sha1": "e623f064f7049ec51dbfe06327bbe7dca00c5608",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/oneds.dll"
+    },
+    {
+      "path": "web2/onnxruntime.dll",
+      "size": 3098952,
+      "sha1": "fa1c47c00099ca351901c0cd45068b486ed2fed3",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/onnxruntime.dll"
+    },
+    {
+      "path": "web2/onramp.dll",
+      "size": 468808,
+      "sha1": "ab7329ddfb98a871f8fbd37be19767bd1062159c",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/onramp.dll"
+    },
+    {
+      "path": "web2/PdfPreview/PdfPreviewHandler.dll",
+      "size": 259392,
+      "sha1": "fb32aa31bb0b801038f23e2896c8be741d3ac49a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/PdfPreview/PdfPreviewHandler.dll"
+    },
+    {
+      "path": "web2/prefs_enclave_x64.dll",
+      "size": 116256,
+      "sha1": "f6ea618842b7b8d4cc70d615dc073ce43edc92e1",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/prefs_enclave_x64.dll"
+    },
+    {
+      "path": "web2/resources.pak",
+      "size": 32511632,
+      "sha1": "b0be45518bfdf69346336936245e80ae684f2b97",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/resources.pak"
+    },
+    {
+      "path": "web2/show_third_party_software_licenses.bat",
+      "size": 270,
+      "sha1": "c4a850beedc588453ba0ac674d060afd52dadcda",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/show_third_party_software_licenses.bat"
+    },
+    {
+      "path": "web2/telclient.dll",
+      "size": 3796848,
+      "sha1": "98e9ec62c4ee1ad104cbf8a88c52595c637ce6d1",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/telclient.dll"
+    },
+    {
+      "path": "web2/textInputMethod.sccd",
+      "size": 18615,
+      "sha1": "c66d65be95b088657c7a835e43a99d597701a329",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/textInputMethod.sccd"
+    },
+    {
+      "path": "web2/Trust Protection Lists/manifest.json",
+      "size": 132,
+      "sha1": "2575d2d2c829e04f8cae923fdc5a285834a04582",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/manifest.json"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/Advertising",
+      "size": 20362,
+      "sha1": "1916b29f6e81d3ff9b7f4ec252147e2767219e06",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/Advertising"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/Analytics",
+      "size": 4106,
+      "sha1": "8f4bc3af952aa16702153c4bbd5a9418072779db",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/Analytics"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/CompatExceptions",
+      "size": 689,
+      "sha1": "90aa226d3c9d50cf4435ecdd2b8b0086d8edeb8b",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/CompatExceptions"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/Content",
+      "size": 4540,
+      "sha1": "86ae60a45c015a7f7703622b275117ed20eae85a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/Content"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/Cryptomining",
+      "size": 668,
+      "sha1": "f93e178ff40310e071e4d596f0aff0514666f787",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/Cryptomining"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/Entities",
+      "size": 69999,
+      "sha1": "917f05453d497b3e3de684a905e141972c34a267",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/Entities"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/Fingerprinting",
+      "size": 1124,
+      "sha1": "7fcdf6848e0d2a904a5414c24908d560dfbb5a88",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/Fingerprinting"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/LICENSE",
+      "size": 35147,
+      "sha1": "8624bcdae55baeef00cd11d5dfcfa60f68710a02",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/LICENSE"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/Other",
+      "size": 34,
+      "sha1": "43c81d1c62fc7ff94f9364639c9a46a0747d122e",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/Other"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/Social",
+      "size": 754,
+      "sha1": "e6ed812e23e201b20170e928686a5d612165df85",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/Social"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Mu/TransparentAdvertisers",
+      "size": 105,
+      "sha1": "ca932af3b25f245ce931fbc6cf10299e5fbe35a7",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Mu/TransparentAdvertisers"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Advertising",
+      "size": 20812,
+      "sha1": "3162cf409a723ee099a775f9d49d4caf2a3d6706",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Advertising"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Analytics",
+      "size": 3243,
+      "sha1": "adb718991fa1998e89bdb88dbbde66d5dc99d809",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Analytics"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Content",
+      "size": 5111,
+      "sha1": "13257c219d54f022800e44b71c7a654b1fc755cc",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Content"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Cryptomining",
+      "size": 32,
+      "sha1": "a2e78944fcac34d89385487ccbbfa4d8f078d612",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Cryptomining"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Entities",
+      "size": 114442,
+      "sha1": "55528d7fe7373138d593d23ec7dad64e5ef101d5",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Entities"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Fingerprinting",
+      "size": 2342,
+      "sha1": "257dfe4e744d38b566a6fe3779f49c2688fc07cf",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Fingerprinting"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/LICENSE",
+      "size": 66,
+      "sha1": "2b2bd9a13afe49748abf39faf9eb29ed658f066e",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/LICENSE"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Other",
+      "size": 34,
+      "sha1": "43c81d1c62fc7ff94f9364639c9a46a0747d122e",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Other"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Social",
+      "size": 3424,
+      "sha1": "8260fc199917a389a33651bb93532339bbe2a792",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Social"
+    },
+    {
+      "path": "web2/Trust Protection Lists/Sigma/Staging",
+      "size": 36,
+      "sha1": "96c75c4fe1e3f33a367f45293bd1bd8bff1c06f4",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/Trust%20Protection%20Lists/Sigma/Staging"
+    },
+    {
+      "path": "web2/uc_connector.exe",
+      "size": 3514696,
+      "sha1": "7ce21e89d7f5ff8c5ade40ca4b01608eda77e299",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/uc_connector.exe"
+    },
+    {
+      "path": "web2/v8_context_snapshot.bin",
+      "size": 731280,
+      "sha1": "3c9f92e5c6bed635418bf2c4053724bca6eaa785",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/v8_context_snapshot.bin"
+    },
+    {
+      "path": "web2/vccorlib140.dll",
+      "size": 360944,
+      "sha1": "db3f24ad8e8692e6ce155e07fd13bc3d8913ebee",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/vccorlib140.dll"
+    },
+    {
+      "path": "web2/vcruntime140.dll",
+      "size": 133536,
+      "sha1": "204d40a656d4d589798f31deda39cedfdf1f7bff",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/vcruntime140.dll"
+    },
+    {
+      "path": "web2/vcruntime140_1.dll",
+      "size": 57328,
+      "sha1": "b7ca133f7748f55ef698bb9848b03a1f72f9d7d5",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/vcruntime140_1.dll"
+    },
+    {
+      "path": "web2/vk_swiftshader.dll",
+      "size": 4742472,
+      "sha1": "18e375d7b07098311bf98d45005c7cf4f488a115",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/vk_swiftshader.dll"
+    },
+    {
+      "path": "web2/vk_swiftshader_icd.json",
+      "size": 106,
+      "sha1": "9c06735c31cec00600fd763a92f8112d085bd12a",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/vk_swiftshader_icd.json"
+    },
+    {
+      "path": "web2/vulkan-1.dll",
+      "size": 926536,
+      "sha1": "1023d34bc4080260a4041fb686b0007eecb5fd25",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/vulkan-1.dll"
+    },
+    {
+      "path": "web2/wdag.dll",
+      "size": 253256,
+      "sha1": "5e1887f25810437493ea14762b4fd7a1a1280184",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/wdag.dll"
+    },
+    {
+      "path": "web2/webview2_integration.dll",
+      "size": 31048,
+      "sha1": "4f2d0cbb562229a5ea74a2a8bdcf2df90e03db52",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/webview2_integration.dll"
+    },
+    {
+      "path": "web2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll",
+      "size": 19883928,
+      "sha1": "99c0ca7d63b43c97f9c81cc56521743866fb9150",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll"
+    },
+    {
+      "path": "web2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll.sig",
+      "size": 1389,
+      "sha1": "15f49be57de0f0cab2b3eb680fe48b1af687b332",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/WidevineCdm/_platform_specific/win_x64/widevinecdm.dll.sig"
+    },
+    {
+      "path": "web2/WidevineCdm/manifest.json",
+      "size": 1001,
+      "sha1": "8c0835d1a6bf82e753b624440e9674d649696ead",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/WidevineCdm/manifest.json"
+    },
+    {
+      "path": "web2/wns_push_client.dll",
+      "size": 558408,
+      "sha1": "3f94d8e19f46c95a14c71e00bc4e04f56e2b08c2",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/web2/wns_push_client.dll"
+    },
+    {
+      "path": "XXTE Manager.exe",
+      "size": 2686380,
+      "sha1": "cc43a4cfd985d0caecb1f2adcc95b8c994adce24",
+      "url": "https://raw.githubusercontent.com/thttd94/XXTE-Tool-Update/main/XXTE%20Manager.exe"
+    }
+  ],
+  "preserve": [
+    "data/xxtouch_router_config.json",
+    "data/xxtouch_inline_snippets.json",
+    "data/license.json",
+    "data/active_config.json",
+    "logs/",
+    "_update_staging/",
+    "_tool_update_backups/"
+  ],
+  "restart": true
+}
