@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "active": true,
+  "machine_id": "01079-06BAA-BBDE9-4054F-3EFD3-8C95C",
+  "status": "active",
+  "expire": "Sat Sep 18 2027 00:00:00 GMT+0700 (Giờ Đông Dương)",
+  "plan": "FULL",
+  "max_devices": "",
+  "customer": "",
+  "note": "auto_registered_pending",
+  "created_at": "Wed Jun 17 2026 10:41:38 GMT+0700 (Giờ Đông Dương)",
+  "checked_at": 1782086701
+}

@@ -21,13 +21,13 @@ set "TEMP_UPDATE_DIR=%TEMP%\XXTE_Tool_Update_Push"
 set "TEMP_WEB2_ZIP=%TEMP_UPDATE_DIR%\web2.zip"
 if not exist "%TEMP_UPDATE_DIR%" mkdir "%TEMP_UPDATE_DIR%"
 
-if exist web2\NUL (
+if exist _internal\web2\NUL (
   echo.
-  echo [1/4] Compress web2 -^> TEMP web2.zip
-  powershell -NoProfile -ExecutionPolicy Bypass -Command "if (Test-Path '%TEMP_WEB2_ZIP%') { Remove-Item '%TEMP_WEB2_ZIP%' -Force }; Compress-Archive -Path 'web2\*' -DestinationPath '%TEMP_WEB2_ZIP%' -CompressionLevel Optimal"
-  if errorlevel 1 (echo ERROR: compress web2 failed & pause & exit /b 1)
+  echo [1/4] Compress _internal\web2 -^> TEMP web2.zip
+  powershell -NoProfile -ExecutionPolicy Bypass -Command "if (Test-Path '%TEMP_WEB2_ZIP%') { Remove-Item '%TEMP_WEB2_ZIP%' -Force }; Compress-Archive -Path '_internal\web2\*' -DestinationPath '%TEMP_WEB2_ZIP%' -CompressionLevel Optimal"
+  if errorlevel 1 (echo ERROR: compress _internal\web2 failed & pause & exit /b 1)
 ) else (
-  echo [1/4] No web2 folder - skip archive
+  echo [1/4] No _internal\web2 folder - skip archive
   set "TEMP_WEB2_ZIP="
 )
 

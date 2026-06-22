@@ -63,7 +63,7 @@ def main():
     files = []
     for rel in tracked:
         rel = rel.replace('\\', '/')
-        if rel in skip_exact or rel.startswith('web2/') or rel.startswith('BUILD/'):
+        if rel in skip_exact or rel.startswith('web2/') or rel.startswith('BUILD/') or rel.startswith('_internal/web2/'):
             continue
         p = ROOT / rel
         if not p.is_file():
@@ -79,7 +79,7 @@ def main():
     if web2_zip:
         archives.append({
             'name': 'web2.zip',
-            'root': 'web2',
+            'root': '_internal/web2',
             'size': web2_zip.stat().st_size,
             'sha1': sha1_file(web2_zip),
             'url': f'https://github.com/{REPO}/releases/download/{tag}/web2.zip',
