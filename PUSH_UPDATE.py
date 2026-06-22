@@ -59,7 +59,7 @@ def main():
     base = f'https://github.com/{REPO}/raw/{payload_sha}/'
 
     tracked = out(['git', 'ls-files']).splitlines()
-    skip_exact = {'.gitignore', 'update_manifest.json', 'PUSH_UPDATE.bat', 'PUSH_UPDATE.py'}
+    skip_exact = {'.gitignore', 'update_manifest.json', 'PUSH_UPDATE.bat', 'PUSH_UPDATE.py', 'SYNC_BUILD_TO_PUSH.bat'}
     files = []
     for rel in tracked:
         rel = rel.replace('\\', '/')
