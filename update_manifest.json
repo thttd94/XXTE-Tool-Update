@@ -1,9 +1,9 @@
 {
   "version": "2.24",
-  "updated_at": 1782086716,
+  "updated_at": 1782087338,
   "changed_at": 1782040094,
   "notes": "",
-  "files_signature": "5d6ef9ef0e7796de769182d8cff9e306a7a67be3",
+  "files_signature": "f821195f39754189f14dd6c6ada9ad05609b0072",
   "pending_signature": "",
   "pending_since": 0,
   "launcher": "XXTE Manager.exe",
@@ -12,205 +12,205 @@
       "path": "XXTE Manager.exe",
       "size": 2687730,
       "sha1": "7e901f9bb2146a025ccd7d4b0f646a3a0cd1d9f4",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/XXTE%20Manager.exe"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/XXTE%20Manager.exe"
     },
     {
       "path": "assets/xxte_manager_icon.ico",
       "size": 41086,
       "sha1": "5a628f168580591837fba11770f204a15cc1d630",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/assets/xxte_manager_icon.ico"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/assets/xxte_manager_icon.ico"
     },
     {
       "path": "assets/xxte_manager_icon.jpg",
       "size": 1629,
       "sha1": "5215cb7fbe6419203ddc438e5501414694ea54e2",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/assets/xxte_manager_icon.jpg"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/assets/xxte_manager_icon.jpg"
     },
     {
       "path": "lua/Claimvideo48.xxt",
       "size": 11499,
       "sha1": "7a2683369ce925f53f916daee96f0d3aac986170",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Claimvideo48.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Claimvideo48.xxt"
     },
     {
       "path": "lua/Group3_ClaimVideo.xxt",
       "size": 19354,
       "sha1": "0c5b2d7401776ec63367c919ec671b3a082c7e94",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Group3_ClaimVideo.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Group3_ClaimVideo.xxt"
     },
     {
       "path": "lua/Group3_EventDD20p_tiktok.xxt",
       "size": 19380,
       "sha1": "8d4dbb0a2f9d9b1ab27d0f985faa183482593b89",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Group3_EventDD20p_tiktok.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Group3_EventDD20p_tiktok.xxt"
     },
     {
       "path": "lua/Group3_EventDD20p_tiktok_lite.xxt",
       "size": 8978,
       "sha1": "1f8c1741f7d2e914a63ecebd9e81e1a1fca6e094",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Group3_EventDD20p_tiktok_lite.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Group3_EventDD20p_tiktok_lite.xxt"
     },
     {
       "path": "lua/Group3_EventVideo180_tiktok.xxt",
       "size": 5277,
       "sha1": "0649fc531f99ea38456fcc200ba7306da0fd9e90",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Group3_EventVideo180_tiktok.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Group3_EventVideo180_tiktok.xxt"
     },
     {
       "path": "lua/Group3_EventVideo180_tiktok_lite.xxt",
       "size": 5292,
       "sha1": "8cefabd335e86714c49c3a02046c463277b2d7ff",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Group3_EventVideo180_tiktok_lite.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Group3_EventVideo180_tiktok_lite.xxt"
     },
     {
       "path": "lua/Group3_NuoiPhoi_tiktok.xxt",
       "size": 31874,
       "sha1": "b35af2e042dd71921fef44a2c23bcb17e028afa7",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Group3_NuoiPhoi_tiktok.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Group3_NuoiPhoi_tiktok.xxt"
     },
     {
       "path": "lua/Group3_NuoiPhoi_tiktok_lite.xxt",
       "size": 29477,
       "sha1": "8499a18743f5fcb1db41c98fe4f5a718f54c89ed",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Group3_NuoiPhoi_tiktok_lite.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Group3_NuoiPhoi_tiktok_lite.xxt"
     },
     {
       "path": "lua/LoginGGSafari.xxt",
       "size": 9963,
       "sha1": "be85c0e824b7a7d6953e364bc1c3ea978e613532",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/LoginGGSafari.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/LoginGGSafari.xxt"
     },
     {
       "path": "lua/NhungAcc.xxt",
       "size": 16386,
       "sha1": "1d3165ac35ba37484f71c17b49ffad7952498685",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/NhungAcc.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/NhungAcc.xxt"
     },
     {
       "path": "lua/Stage6_tiktok.xxt",
       "size": 9959,
       "sha1": "4467bac8348289f1a58aec9480c63bec1c19850b",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/Stage6_tiktok.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/Stage6_tiktok.xxt"
     },
     {
       "path": "lua/TikTokLite_EdgeOCR_Receive.xxt",
       "size": 5788,
       "sha1": "185b2e22d64146119467ebae3e656c1c01a31035",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/TikTokLite_EdgeOCR_Receive.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/TikTokLite_EdgeOCR_Receive.xxt"
     },
     {
       "path": "lua/event_dd_20p.xxt",
       "size": 1405,
       "sha1": "c37a9926a6a27da687bee2d83c41662a15d83380",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/event_dd_20p.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/event_dd_20p.xxt"
     },
     {
       "path": "lua/event_video_180.xxt",
       "size": 1411,
       "sha1": "adc0c11f0053a4a83ade01d767e8eb116d2d1d0c",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/event_video_180.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/event_video_180.xxt"
     },
     {
       "path": "lua/floating_menu.xxt",
       "size": 21205,
       "sha1": "e7406c47a153d2bb6dba18bce95ff3b00b16d623",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/floating_menu.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/floating_menu.xxt"
     },
     {
       "path": "lua/home.xxt",
       "size": 1454,
       "sha1": "520d5330a0661f0926b5b66b726740fa1936da94",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/home.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/home.xxt"
     },
     {
       "path": "lua/lib/sync_library.xxt",
       "size": 9799,
       "sha1": "df69d3fdb4703cab3e011287900cbf80381fe83d",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/lib/sync_library.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/lib/sync_library.xxt"
     },
     {
       "path": "lua/lock_home.xxt",
       "size": 1513,
       "sha1": "804850ea06cf26fc8af51e6b285110412f871c02",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/lock_home.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/lock_home.xxt"
     },
     {
       "path": "lua/nuoi_phoi.xxt",
       "size": 1399,
       "sha1": "74b6528431b095b93fc309a79d8a7aacacc80ac6",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/nuoi_phoi.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/nuoi_phoi.xxt"
     },
     {
       "path": "lua/probe_local_http.xxt",
       "size": 3965,
       "sha1": "ccca8eac822334ce3206341118ffb10ef6cd6af9",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/probe_local_http.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/probe_local_http.xxt"
     },
     {
       "path": "lua/reaction.xxt",
       "size": 1397,
       "sha1": "ae395d6904bdaf94dd705a5e8e165ff9bd1075c6",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/reaction.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/reaction.xxt"
     },
     {
       "path": "lua/safari.xxt",
       "size": 1393,
       "sha1": "77f17ad425700b1e70374f4f9ab2041ef83c98c4",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/safari.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/safari.xxt"
     },
     {
       "path": "lua/scan_app.xxt",
       "size": 1599,
       "sha1": "c20537667c983d8c9a18490e5d28f3390b29538b",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/scan_app.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/scan_app.xxt"
     },
     {
       "path": "lua/send_file.xxt",
       "size": 1399,
       "sha1": "192bf138cfb31f5900f45283f08ca4f839c304e4",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/send_file.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/send_file.xxt"
     },
     {
       "path": "lua/shadowrocket_fix_pipo_rules.xxt",
       "size": 4619,
       "sha1": "2a0e1c5beefb9a71bb89b42b8d4251ed9837612f",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/shadowrocket_fix_pipo_rules.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/shadowrocket_fix_pipo_rules.xxt"
     },
     {
       "path": "lua/stage7/Stage7.xxt",
       "size": 11705,
       "sha1": "013cdef2adf727c3d2d2b18bd8511eba809f2d71",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/stage7/Stage7.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/stage7/Stage7.xxt"
     },
     {
       "path": "lua/sync_library.xxt",
       "size": 9799,
       "sha1": "df69d3fdb4703cab3e011287900cbf80381fe83d",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/sync_library.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/sync_library.xxt"
     },
     {
       "path": "lua/trollIPA.xxt",
       "size": 7600,
       "sha1": "0869d1de3996dd5ae7c6371f8a48f7973ebad3de",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/trollIPA.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/trollIPA.xxt"
     },
     {
       "path": "lua/ui.xxt",
       "size": 1385,
       "sha1": "582346ddd993b9ddc984fc9aa3b1d56f7676e46f",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/lua/ui.xxt"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/lua/ui.xxt"
     },
     {
       "path": "remote_webview_host.exe",
       "size": 16754475,
       "sha1": "878b918d7f57f0157e53f043d4465448ae11a387",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/remote_webview_host.exe"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/remote_webview_host.exe"
     },
     {
       "path": "tool_updater_helper.exe",
       "size": 8137235,
       "sha1": "548378c5383874b16d8521961e018381979d649d",
-      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/1f5a64c18efa690594c6f226ae6dc8dac6c8f648/tool_updater_helper.exe"
+      "url": "https://github.com/thttd94/XXTE-Tool-Update/raw/ffa587cd7f69fa5d75d1f8b54fffda0b818b8b3b/tool_updater_helper.exe"
     }
   ],
   "preserve": [
@@ -228,7 +228,7 @@
       "name": "web2.zip",
       "root": "web2",
       "size": 287039710,
-      "sha1": "992ad43c9ef996564de9f03eb321f98d6e2bad0b",
+      "sha1": "5dae041053639ec0a39a199376e7acab5cf99805",
       "url": "https://github.com/thttd94/XXTE-Tool-Update/releases/download/v2.24/web2.zip"
     }
   ]
