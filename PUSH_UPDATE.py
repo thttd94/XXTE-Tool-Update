@@ -1,6 +1,9 @@
 import hashlib
 import json
+import os
 import subprocess
+import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -28,20 +31,22 @@ def main():
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
     version = str(manifest.get('version') or '0')
     tag = f'v{version}'
-    build_dir = ROOT / 'BUILD'
-    build_dir.mkdir(exist_ok=True)
+
+    web2_zip_arg = sys.argv[1] if len(sys.argv) > 1 else os.environ.get('WEB2_ZIP', '')
+    web2_zip = Path(web2_zip_arg).resolve() if web2_zip_arg else None
+    if web2_zip and not web2_zip.exists():
+        raise SystemExit(f'ERROR: web2 zip not found: {web2_zip}')
 
     print(f'Version: {version}')
     print(f'Tag: {tag}')
+    if web2_zip:
+        print(f'web2 zip: {web2_zip}')
 
-    # Ensure release exists.
     rel = subprocess.run(['gh', 'release', 'view', tag], cwd=ROOT)
     if rel.returncode != 0:
         run(['gh', 'release', 'create', tag, '--title', f'XXTE Tool Update {version}', '--notes', f'XXTE Tool Update {version} assets'])
 
-    # Upload web2 zip if present. The BAT creates it first.
-    web2_zip = build_dir / 'web2.zip'
-    if web2_zip.exists():
+    if web2_zip:
         run(['gh', 'release', 'upload', tag, str(web2_zip), '--clobber'])
 
     # Commit payload first so file URLs can pin to immutable commit.
@@ -63,16 +68,15 @@ def main():
         p = ROOT / rel
         if not p.is_file():
             continue
-        size = p.stat().st_size
         files.append({
             'path': rel,
-            'size': size,
+            'size': p.stat().st_size,
             'sha1': sha1_file(p),
             'url': base + rel.replace(' ', '%20'),
         })
 
     archives = []
-    if web2_zip.exists():
+    if web2_zip:
         archives.append({
             'name': 'web2.zip',
             'root': 'web2',
