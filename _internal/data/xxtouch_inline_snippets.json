@@ -89,7 +89,7 @@
   },
   {
     "title": "Home Ảo",
-    "code": "sys.assistive_touch_on()\nBật home ảo\n\n\nsys.assistive_touch_off()"
+    "code": "sys.assistive_touch_on()\n\nsys.assistive_touch_off()"
   },
   {
     "title": "Xoá cookie safari",

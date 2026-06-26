@@ -1,0 +1,252 @@
+-- setupshadow.lua
+-- Pipo / Shadowrocket local setup flow.
+-- NOTE: Stage2 (write Shadowrocket DB/plist/config) is still done by GUI Python because it builds binary sqlite/plist from PC templates.
+-- This Lua contains Stage3 -> Stage6 only: cert download popup, install profile, open trust settings, trust mitmproxy.
+
+local CERT_URL = "http://192.17.1.10:8000/mitmproxy-ca-cert.cer" -- sửa PC IP nếu khác
+
+local ok_app, app = pcall(require, "app")
+local ok_sys, sys = pcall(require, "sys")
+local ok_touch, touch = pcall(require, "touch")
+local ok_screen, screen = pcall(require, "screen")
+local ok_webview, webview = pcall(require, "webview")
+
+local LOG_PATH = "/var/mobile/Media/1ferver/setupshadow.log"
+local WEBVIEW_ID = 92
+local logs = {}
+
+local function sleep(ms)
+  if ok_sys and sys and sys.msleep then sys.msleep(ms) end
+end
+
+local function mkdirp(p)
+  if not p or p == "" then return end
+  os.execute("mkdir -p " .. "'" .. tostring(p):gsub("'", "'\\''") .. "'")
+end
+
+local function write_log()
+  pcall(function()
+    mkdirp("/var/mobile/Media/1ferver")
+    local f = io.open(LOG_PATH, "w")
+    if f then f:write(table.concat(logs, "\n")); f:close() end
+  end)
+end
+
+local function esc_html(s)
+  s = tostring(s or "")
+  s = s:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"):gsub('"', "&quot;")
+  return s
+end
+
+local function show_top(msg, color)
+  color = color or "rgba(0,0,0,.82)"
+  if ok_webview and webview and type(webview.show) == "function" then
+    local html = [[<html><head><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>html,body{margin:0;padding:0;background:transparent;overflow:hidden;font-family:-apple-system,Arial}#b{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:]] .. color .. [[;color:#fff;border-radius:12px;font-size:15px;font-weight:800;text-align:center;box-sizing:border-box;padding:0 8px;white-space:normal}</style>
+</head><body><div id="b">]] .. esc_html(msg) .. [[</div></body></html>]]
+    pcall(function()
+      webview.show{ id=WEBVIEW_ID, html=html, x=1, y=1, width=748, height=70, alpha=1.0, corner_radius=12, opaque=false, can_drag=false, ignores_hit=true, level=999999, animation_duration=0 }
+    end)
+  end
+end
+
+local function add(s, color)
+  local line = tostring(s or "")
+  logs[#logs + 1] = line
+  print(line)
+  write_log()
+  show_top(line, color)
+end
+
+local function tap(x, y)
+  add("tap " .. tostring(x) .. "," .. tostring(y))
+  if ok_touch and touch and touch.tap then
+    touch.tap(x, y)
+    return true
+  end
+  add("ERR no touch.tap", "rgba(190,0,0,.92)")
+  return false
+end
+
+local function norm(s)
+  return tostring(s or ""):lower():gsub("%s+", " ")
+end
+
+local function item_text(v)
+  if type(v) ~= "table" then return tostring(v or "") end
+  return tostring(v.text or v.word or v.label or v.value or v.content or v[1] or "")
+end
+
+local function item_box(v)
+  if type(v) ~= "table" then return nil end
+  local x = tonumber(v.x or v.left or v[2])
+  local y = tonumber(v.y or v.top or v[3])
+  local w = tonumber(v.width or v.w)
+  local h = tonumber(v.height or v.h)
+  local r = tonumber(v.right)
+  local b = tonumber(v.bottom)
+  if x and y and w and h then return x, y, x + w, y + h end
+  if x and y and r and b then return x, y, r, b end
+  if type(v.bounds) == "table" then
+    local bb = v.bounds
+    local bx = tonumber(bb.x or bb.left or bb[1])
+    local by = tonumber(bb.y or bb.top or bb[2])
+    local bw = tonumber(bb.width or bb.w or bb[3])
+    local bh = tonumber(bb.height or bb.h or bb[4])
+    if bx and by and bw and bh then return bx, by, bx + bw, by + bh end
+  end
+  return nil
+end
+
+local function ocr_all()
+  if not (ok_screen and screen and screen.ocr_text) then return nil end
+  local ok, res = pcall(function() return screen.ocr_text(0, 0, 750, 1334) end)
+  if ok and res then return res end
+  ok, res = pcall(function() return screen.ocr_text() end)
+  if ok and res then return res end
+  return nil
+end
+
+local function wait_ocr_tap(words, timeout_ms, fallback_x, fallback_y, label)
+  local deadline = os.time() + math.ceil((timeout_ms or 10000) / 1000)
+  label = label or table.concat(words, "/")
+  while os.time() <= deadline do
+    local res = ocr_all()
+    local joined = ""
+    if type(res) == "table" then
+      for _, v in pairs(res) do
+        local t = item_text(v)
+        joined = joined .. " " .. t
+        local nt = norm(t)
+        for _, w in ipairs(words) do
+          if nt:find(norm(w), 1, true) then
+            local x1, y1, x2, y2 = item_box(v)
+            if x1 and y1 and x2 and y2 then
+              local cx = math.floor((x1 + x2) / 2)
+              local cy = math.floor((y1 + y2) / 2)
+              add("OCR " .. label .. " bbox -> " .. cx .. "," .. cy .. " text=" .. t)
+              tap(cx, cy)
+              return true, "bbox:" .. t
+            end
+            if fallback_x and fallback_y then
+              add("OCR " .. label .. " no_bbox -> fallback " .. fallback_x .. "," .. fallback_y .. " text=" .. t)
+              tap(fallback_x, fallback_y)
+              return true, "no_bbox:" .. t
+            end
+            add("OCR " .. label .. " text no bbox/fallback: " .. t)
+            return true, "text:" .. t
+          end
+        end
+      end
+    elseif res then
+      joined = tostring(res)
+    end
+    local nj = norm(joined)
+    for _, w in ipairs(words) do
+      if nj:find(norm(w), 1, true) then
+        if fallback_x and fallback_y then
+          add("OCR joined " .. label .. " -> fallback " .. fallback_x .. "," .. fallback_y)
+          tap(fallback_x, fallback_y)
+        else
+          add("OCR joined " .. label .. " no fallback")
+        end
+        return true, "joined"
+      end
+    end
+    sleep(600)
+  end
+  add("OCR timeout " .. label)
+  return false, "timeout"
+end
+
+local function open_url(u)
+  add("open_url " .. tostring(u))
+  if ok_app and app and app.open_url then
+    app.open_url(u)
+    return true
+  end
+  add("ERR no app.open_url", "rgba(190,0,0,.92)")
+  return false
+end
+
+local function stage2_prepare_shadow()
+  add("STAGE2 start prepare/check Shadowrocket")
+  sleep(500)
+  if ok_app and app and app.quit then
+    pcall(app.quit, "com.liguangming.Shadowrocket")
+    add("STAGE2 quit Shadowrocket")
+  end
+  sleep(1000)
+  if ok_app and app and app.run then
+    local ok, err = pcall(app.run, "com.liguangming.Shadowrocket")
+    add("STAGE2 open Shadowrocket ok=" .. tostring(ok) .. " err=" .. tostring(err))
+  else
+    add("STAGE2 no app.run", "rgba(190,0,0,.92)")
+  end
+  sleep(1500)
+  add("STAGE2 done")
+  return true
+end
+
+local function stage3_cert()
+  add("STAGE3 start cert")
+  sleep(500)
+  open_url(CERT_URL)
+  sleep(1000)
+  local allow_ok, allow_why = wait_ocr_tap({"Allow"}, 15000, 625, 672, "Allow")
+  if not allow_ok then
+    add("Allow OCR fail -> fallback tap 625,672")
+    tap(625, 672)
+  end
+  sleep(1000)
+  local close_ok, close_why = wait_ocr_tap({"Close"}, 20000, 372, 763, "Close")
+  add("STAGE3 done allow=" .. tostring(allow_ok) .. "/" .. tostring(allow_why) .. " close=" .. tostring(close_ok) .. "/" .. tostring(close_why))
+  return true
+end
+
+local function stage4_install_profile()
+  add("STAGE4 start install profile")
+  sleep(500)
+  open_url("prefs:root=General&path=ManagedConfigurationList/PurgatoryInstallRequested")
+  sleep(2000)
+  add("STAGE4 tap Install #1 top-right")
+  tap(605, 122)     -- Install #1 top-right
+  sleep(1700)
+  add("STAGE4 tap Install #2 top-right")
+  tap(605, 122)     -- Install #2 top-right warning
+  sleep(1000)
+  add("STAGE4 tap red Install")
+  tap(436, 1129)    -- red Install bottom/action sheet
+  sleep(2000)
+  add("STAGE4 done")
+  return true
+end
+
+local function stage5_open_trust()
+  add("STAGE5 start open trust settings")
+  sleep(500)
+  open_url("prefs:root=General&path=About/CERT_TRUST_SETTINGS")
+  sleep(2000)
+  add("STAGE5 done")
+  return true
+end
+
+local function stage6_trust_cert()
+  add("STAGE6 start trust cert")
+  sleep(500)
+  tap(603, 516) -- mitmproxy switch on 757
+  sleep(1000)
+  local cont_ok, cont_why = wait_ocr_tap({"Continue"}, 8000, 460, 762, "Continue")
+  add("STAGE6 done continue=" .. tostring(cont_ok) .. "/" .. tostring(cont_why))
+  return true
+end
+
+add("setupshadow START", "rgba(0,90,180,.90)")
+sleep(500)
+stage2_prepare_shadow()
+stage3_cert()
+stage4_install_profile()
+stage5_open_trust()
+stage6_trust_cert()
+add("setupshadow DONE", "rgba(0,140,40,.90)")
+return true

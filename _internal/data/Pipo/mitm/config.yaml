@@ -1,0 +1,3 @@
+# OpenClaw: allow older iOS/client TLS handshakes through mitmproxy
+# Fix: Client and mitmproxy cannot agree on a TLS version.
+tls_version_client_min: TLS1

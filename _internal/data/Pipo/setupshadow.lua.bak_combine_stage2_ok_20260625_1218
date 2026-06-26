@@ -1,0 +1,267 @@
+-- setupshadow.lua CLEAN
+-- One local Lua flow: Stage2 minimal Shadow config + Stage3->6 UI/cert/profile/trust.
+-- Keep this file simple; no old UI add-server routine, no timer overlap.
+
+local PC_IP = "192.17.1.10"
+local PROXY_PORT = "8881"
+local CERT_URL = "http://192.17.1.10:8000/mitmproxy-ca-cert.cer"
+
+local ok_app, app = pcall(require, "app")
+local ok_sys, sys = pcall(require, "sys")
+local ok_touch, touch = pcall(require, "touch")
+local ok_screen, screen = pcall(require, "screen")
+local ok_file, file = pcall(require, "file")
+local ok_lfs, lfs = pcall(require, "lfs")
+local ok_webview, webview = pcall(require, "webview")
+
+local LOG_PATH = "/var/mobile/Media/1ferver/setupshadow.log"
+local WEBVIEW_ID = 92
+local logs = {}
+
+local function sleep(ms) if ok_sys and sys and sys.msleep then sys.msleep(ms) end end
+local function q(s) return "'" .. tostring(s):gsub("'", "'\\''") .. "'" end
+local function mkdirp(p)
+  if not p or p == "" then return end
+  local cur = ""
+  for part in tostring(p):gmatch("[^/]+") do
+    cur = cur .. "/" .. part
+    pcall(function() if ok_lfs and lfs and lfs.mkdir then lfs.mkdir(cur) end end)
+    pcall(function() if ok_file and file and file.mkdir then file.mkdir(cur) end end)
+    pcall(function() os.execute("mkdir -p " .. q(cur)) end)
+  end
+end
+local function dirname(p) return tostring(p):match("^(.+)/[^/]+$") or "/" end
+local function write_log()
+  mkdirp("/var/mobile/Media/1ferver")
+  local f = io.open(LOG_PATH, "w")
+  if f then f:write(table.concat(logs, "\n")); f:close() end
+end
+local function esc_html(s)
+  s = tostring(s or "")
+  return (s:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"):gsub('"', "&quot;"))
+end
+local function show_top(msg, color)
+  color = color or "rgba(0,0,0,.82)"
+  if ok_webview and webview and type(webview.show) == "function" then
+    local html = [[<html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;padding:0;background:transparent;overflow:hidden;font-family:-apple-system,Arial}#b{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:]] .. color .. [[;color:#fff;border-radius:12px;font-size:15px;font-weight:800;text-align:center;box-sizing:border-box;padding:0 8px;white-space:normal}</style></head><body><div id="b">]] .. esc_html(msg) .. [[</div></body></html>]]
+    pcall(function() webview.show{ id=WEBVIEW_ID, html=html, x=1, y=1, width=748, height=70, alpha=1.0, corner_radius=12, opaque=false, can_drag=false, ignores_hit=true, level=999999, animation_duration=0 } end)
+  end
+end
+local function add(s, color)
+  local line = tostring(s or "")
+  logs[#logs+1] = line
+  print(line)
+  write_log()
+  show_top(line, color)
+end
+local function tap(x,y)
+  add("tap " .. x .. "," .. y)
+  if ok_touch and touch and touch.tap then touch.tap(x,y); return true end
+  add("ERR no touch.tap", "rgba(190,0,0,.92)")
+  return false
+end
+local function exists(p)
+  local f=io.open(p,"rb"); if f then local n=f:seek("end") or 0; f:close(); return true,n end
+  return false,0
+end
+local function list(p)
+  if ok_file and file and file.list then local ok,t=pcall(file.list,p); if ok and type(t)=="table" then return t end end
+  return {}
+end
+local function read_file(p)
+  local f=io.open(p,"rb"); if not f then return nil end; local s=f:read("*a"); f:close(); return s
+end
+local function write_file(p, content)
+  mkdirp(dirname(p))
+  local f,err=io.open(p,"w")
+  if not f then add("WRITE_FAIL "..p.." err="..tostring(err)); return false end
+  f:write(content or ""); f:close(); add("WRITE_OK "..p.." len="..#(content or "")); return true
+end
+
+local function find_shadow_data()
+  for _,root in ipairs({"/var/mobile/Containers/Data/Application","/private/var/mobile/Containers/Data/Application"}) do
+    for _,uuid in ipairs(list(root)) do
+      local base=root.."/"..tostring(uuid)
+      if exists(base.."/Library/Preferences/com.liguangming.Shadowrocket.plist") or exists(base.."/Documents/Databases/default.db") then
+        return base, base.."/Documents/Databases/default.db"
+      end
+    end
+  end
+  return nil,nil
+end
+
+local SERVERMANAGER_HEX = "62706c6973743030d40102030405066f725924617263686976657258246f626a656374735424746f70582476657273696f6e5f100f4e534b657965644172636869766572af101807080e4243444546454748494a4b4f4356575c5f6366686b55246e756c6cd2090a0b0c5624636c6173735a4e532e6f626a656374738017a10d8002df101a090f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40415d616c6c6f77496e7365637572655763726561746564556661696c7354666c616756666f6c64656452683254686f7374566d6574686f64536d7578546f626673536f74615770616464696e675470696e6756706c7567696e5b706c7567696e506172616d54706f72745374666f53746c7354747970655375647053756f7457757064617465645475756964567765696768745478746c738016800680138006800b80058005800c800d8005800f80058005800780048011800a8008800580038008800680158010800980065448545450546e6f6e650810001003126a3cb8e75438383831534c414e5b3139322e31372e312e3130d2094c4d4e594e532e737472696e67800e546175746fd2505152535824636c61737365735a24636c6173736e616d65a35354555f100f4e534d757461626c65537472696e67584e53537472696e67584e534f626a6563745f102435353841323037372d413338332d343533442d394439422d314538303544413639334539d309580a595a5b574e532e6b6579738012a0a0d250515d5ea25e555c4e5344696374696f6e617279d209606162574e532e74696d6580142341c7f67833cf050ad250516465a26555564e5344617465d2096067628014d25051696aa26a5559444c57536572766572d250516c6da36d6e555e4e534d757461626c654172726179574e534172726179d1707154726f6f74800112000186a000080011001b0024002900320044005f0065006a0071007c007e0080008200b900c700cf00d500da00e100e400e900f000f400f900fd0105010a0111011d01220126012a012f01330137013f0144014b01500152015401560158015a015c015e01600162016401660168016a016c016e01700172017401760178017a017c017e0180018201840189018e018f019101930198019d01a101ad01b201bc01be01c301c801d101dc01e001f201fb0204022b0232023a023c023d023e024302460253025802600262026b027002730273027a027f02810286028902930298029c02ab02b302b602bb02bd00000000000002010000000000000073000000000000000000000000000002c2"
+local PREFS_HEX = "62706c6973743030d2010203045f102867726f75702e636f6d2e6c696775616e676d696e672e53656c65637465645365727665724e616d655f102867726f75702e636f6d2e6c696775616e676d696e672e53656c6563746564536572766572555549445f10103139322e31372e312e31303a383838315f102435353841323037372d413338332d343533442d394439422d314538303544413639334539080d386376000000000000010100000000000000050000000000000000000000000000009d"
+local function hex_to_bin(hex)
+  return (hex:gsub("..", function(cc) return string.char(tonumber(cc, 16)) end))
+end
+local function find_shadow_group()
+  for _,root in ipairs({"/private/var/mobile/Containers/Shared/AppGroup","/var/mobile/Containers/Shared/AppGroup"}) do
+    for _,uuid in ipairs(list(root)) do
+      local base=root.."/"..tostring(uuid)
+      local meta=read_file(base.."/.com.apple.mobile_container_manager.metadata.plist") or ""
+      local ok=exists(base.."/ServerManager")
+      if ok or meta:find("group.com.liguangming",1,true) or meta:find("Shadowrocket",1,true) then return base end
+    end
+  end
+  return nil
+end
+
+local function shadow_conf()
+  return table.concat({
+    "[General]",
+    "bypass-system = true",
+    "skip-proxy = 127.0.0.1, localhost, *.local",
+    "dns-server = system",
+    "",
+    "[Proxy]",
+    "PROXY = http, " .. PC_IP .. ", " .. PROXY_PORT,
+    "",
+    "[Rule]",
+    "DOMAIN-SUFFIX,pipopay.com,PROXY",
+    "DOMAIN-SUFFIX,mitm.it,PROXY",
+    "FINAL,DIRECT",
+    "",
+  }, "\n")
+end
+local function try_sqlite_db(db)
+  local ok_sqlite, sqlite3 = pcall(require, "sqlite3")
+  if not ok_sqlite or not sqlite3 then ok_sqlite, sqlite3 = pcall(require, "lsqlite3") end
+  if not ok_sqlite or not sqlite3 or not sqlite3.open then add("SQLITE_MODULE_MISSING skip DB edit"); return false end
+  local conn = sqlite3.open(db)
+  if not conn then add("SQLITE_OPEN_FAIL "..tostring(db)); return false end
+  local function exec(sql) local ok,err=pcall(function() return conn:exec(sql) end); if not ok then add("SQL_ERR "..tostring(err)); return false end; return true end
+  exec("delete from config where section='rule' and ((name='DOMAIN-SUFFIX' and value in ('pipopay.com','mitm.it')) or name='FINAL')")
+  exec("insert into config(section,name,value,option,ext,remarks,created) values('rule','DOMAIN-SUFFIX','pipopay.com','PROXY','','',strftime('%s','now'))")
+  exec("insert into config(section,name,value,option,ext,remarks,created) values('rule','DOMAIN-SUFFIX','mitm.it','PROXY','','',strftime('%s','now'))")
+  exec("insert into config(section,name,value,option,ext,remarks,created) values('rule','FINAL','','DIRECT','','',strftime('%s','now'))")
+  pcall(function() conn:close() end)
+  add("SQLITE_DB_RULES_OK")
+  return true
+end
+
+local function norm(s) return tostring(s or ""):lower():gsub("%s+", " ") end
+local function item_text(v) if type(v) ~= "table" then return tostring(v or "") end return tostring(v.text or v.word or v.label or v.value or v.content or v[1] or "") end
+local function item_box(v)
+  if type(v) ~= "table" then return nil end
+  local x=tonumber(v.x or v.left or v[2]); local y=tonumber(v.y or v.top or v[3]); local w=tonumber(v.width or v.w); local h=tonumber(v.height or v.h); local r=tonumber(v.right); local b=tonumber(v.bottom)
+  if x and y and w and h then return x,y,x+w,y+h end
+  if x and y and r and b then return x,y,r,b end
+  if type(v.bounds)=="table" then local bb=v.bounds; local bx=tonumber(bb.x or bb.left or bb[1]); local by=tonumber(bb.y or bb.top or bb[2]); local bw=tonumber(bb.width or bb.w or bb[3]); local bh=tonumber(bb.height or bb.h or bb[4]); if bx and by and bw and bh then return bx,by,bx+bw,by+bh end end
+  return nil
+end
+local function ocr_all()
+  if not (ok_screen and screen and screen.ocr_text) then return nil end
+  local ok,res=pcall(function() return screen.ocr_text(0,0,750,1334) end); if ok and res then return res end
+  ok,res=pcall(function() return screen.ocr_text() end); if ok and res then return res end
+  return nil
+end
+local function wait_ocr_tap(words, timeout_ms, fallback_x, fallback_y, label)
+  local deadline=os.time()+math.ceil((timeout_ms or 10000)/1000); label=label or table.concat(words,"/")
+  while os.time() <= deadline do
+    local res=ocr_all(); local joined=""
+    if type(res)=="table" then
+      for _,v in pairs(res) do
+        local t=item_text(v); joined=joined.." "..t; local nt=norm(t)
+        for _,w in ipairs(words) do
+          if nt:find(norm(w),1,true) then
+            local x1,y1,x2,y2=item_box(v)
+            if x1 and y1 and x2 and y2 then local cx=math.floor((x1+x2)/2); local cy=math.floor((y1+y2)/2); add("OCR "..label.." bbox -> "..cx..","..cy.." text="..t); tap(cx,cy); return true,"bbox:"..t end
+            if fallback_x and fallback_y then add("OCR "..label.." no_bbox -> fallback "..fallback_x..","..fallback_y.." text="..t); tap(fallback_x,fallback_y); return true,"no_bbox:"..t end
+            return true,"text:"..t
+          end
+        end
+      end
+    elseif res then joined=tostring(res) end
+    local nj=norm(joined); for _,w in ipairs(words) do if nj:find(norm(w),1,true) then if fallback_x and fallback_y then add("OCR joined "..label.." -> fallback "..fallback_x..","..fallback_y); tap(fallback_x,fallback_y) end; return true,"joined" end end
+    sleep(100)
+  end
+  add("OCR timeout "..label); return false,"timeout"
+end
+local function open_url(u)
+  add("open_url "..tostring(u)); if ok_app and app and app.open_url then app.open_url(u); return true end; add("ERR no app.open_url","rgba(190,0,0,.92)"); return false
+end
+
+local function stage2_config()
+  add("STAGE2 start config", "rgba(0,90,180,.90)")
+  if ok_app and app and app.quit then pcall(app.quit, "com.liguangming.Shadowrocket") end
+  sleep(1000)
+  local data_path, db_path = find_shadow_data()
+  add("STAGE2 DATA_PATH="..tostring(data_path)); add("STAGE2 DB_PATH="..tostring(db_path))
+  if not data_path then add("STAGE2 ERROR data container not found", "rgba(190,0,0,.92)"); return false end
+  write_file(data_path.."/Documents/default.conf", shadow_conf())
+  if db_path then try_sqlite_db(db_path) end
+  local group_path=find_shadow_group()
+  add("STAGE2 GROUP_PATH="..tostring(group_path))
+  if group_path then
+    local server_bin=hex_to_bin(SERVERMANAGER_HEX)
+    local prefs_bin=hex_to_bin(PREFS_HEX)
+    write_file(group_path.."/ServerManager", server_bin)
+    write_file(group_path.."/DLWWidgetManager", server_bin)
+    write_file(group_path.."/Library/Preferences/group.com.liguangming.Shadowrocket.plist", prefs_bin)
+  else
+    add("STAGE2 WARN group container not found")
+  end
+  if ok_app and app and app.quit then pcall(app.quit, "com.liguangming.Shadowrocket") end
+  sleep(800)
+  if ok_app and app and app.run then pcall(app.run, "com.liguangming.Shadowrocket") end
+  sleep(1500)
+  add("STAGE2 done")
+  return true
+end
+local function stage3_cert()
+  add("STAGE3 start cert")
+  sleep(500)
+  open_url(CERT_URL)
+  sleep(1000)
+  local allow_ok, allow_why = wait_ocr_tap({"Allow"}, 15000, 625, 672, "Allow")
+  if not allow_ok then add("Allow OCR fail -> fallback tap 625,672"); tap(625,672) end
+  sleep(1000)
+  local close_ok, close_why = wait_ocr_tap({"Close"}, 20000, 372, 763, "Close")
+  add("STAGE3 done allow="..tostring(allow_ok).."/"..tostring(allow_why).." close="..tostring(close_ok).."/"..tostring(close_why))
+  return true
+end
+local function stage4_install_profile()
+  add("STAGE4 start install profile")
+  sleep(500)
+  open_url("prefs:root=General&path=ManagedConfigurationList/PurgatoryInstallRequested")
+  sleep(2000)
+  add("STAGE4 tap Install #1 top-right"); tap(605,122)
+  sleep(1700)
+  add("STAGE4 tap Install #2 top-right"); tap(605,122)
+  sleep(1000)
+  add("STAGE4 tap red Install"); tap(436,1129)
+  sleep(2000)
+  add("STAGE4 done")
+  return true
+end
+local function stage5_open_trust()
+  add("STAGE5 start open trust settings")
+  sleep(500)
+  open_url("prefs:root=General&path=About/CERT_TRUST_SETTINGS")
+  sleep(2000)
+  add("STAGE5 done")
+  return true
+end
+local function stage6_trust_cert()
+  add("STAGE6 start trust cert")
+  sleep(500)
+  tap(603,516)
+  sleep(1000)
+  local cont_ok, cont_why = wait_ocr_tap({"Continue"}, 8000, 460, 762, "Continue")
+  add("STAGE6 done continue="..tostring(cont_ok).."/"..tostring(cont_why))
+  return true
+end
+
+add("setupshadow START", "rgba(0,90,180,.90)")
+sleep(500)
+if stage2_config() then
+  stage3_cert()
+  stage4_install_profile()
+  stage5_open_trust()
+  stage6_trust_cert()
+  add("setupshadow DONE", "rgba(0,140,40,.90)")
+else
+  add("setupshadow STOP at STAGE2", "rgba(190,0,0,.92)")
+end
+return true
