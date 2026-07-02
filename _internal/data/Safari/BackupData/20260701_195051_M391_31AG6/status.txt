@@ -1,0 +1,6 @@
+ok=3/3
+dataPath=/private/var/mobile/Containers/Data/Application/B8301214-1C04-4C5E-B636-083A9B1EC7BD
+cookies=/var/mobile/Media/1ferver/bin/tiktok_lite/Cookies.binarycookies
+archiver=/var/mobile/Media/1ferver/bin/tiktok_lite/ttaccountSDKUserInfo.archiver
+plist=/var/mobile/Media/1ferver/bin/tiktok_lite/com.ss.iphone.ugc.tiktok.lite.plist
+sandbox_miss rc=nil

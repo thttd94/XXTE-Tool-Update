@@ -1,0 +1,49 @@
+[21:54:39] API started http://127.0.0.1:8788/api/status
+[21:55:09] [114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool.txt” couldn’t be opened because there is no such file."}
+[21:57:00] [114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool.txt” couldn’t be opened because there is no such file."}
+[21:57:18] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool.txt” couldn’t be opened because there is no such file."}
+[21:57:58] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool.txt” couldn’t be opened because there is no such file."}
+[21:58:05] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool.txt” couldn’t be opened because there is no such file."}
+[21:58:55] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool.txt” couldn’t be opened because there is no such file."}
+[22:11:29] API started http://127.0.0.1:8788/api/status
+[22:12:06] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “Cookies.binarycookies” couldn’t be opened because there is no such file."}
+[22:12:20] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “Cookies.binarycookies” couldn’t be opened because there is no such file."}
+[22:14:50] API started http://127.0.0.1:8788/api/status
+[22:15:38] [192.14.5.114] ERROR pull: Invalid format specifier ''..tostring(ok)..',"size":'..tostring(size)..',"src":"'..jesc(srcPath)..'","error":"'..jesc(err)..'"' for object of type 'str'
+[22:23:58] API started http://127.0.0.1:8788/api/status
+[22:24:35] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “status.json” couldn’t be opened because there is no such file."}
+[22:24:47] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “status.json” couldn’t be opened because there is no such file."}
+[22:24:57] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “status.json” couldn’t be opened because there is no such file."}
+[22:24:58] [192.14.5.114] ERROR pull: HTTP 400: {"code":4,"details":{},"message":"The file “status.json” couldn’t be opened because there is no such file."}
+[22:27:41] API started http://127.0.0.1:8788/api/status
+[22:29:02] [192.14.5.114] FAIL pull Safari 192.14.5.114 | status.json chưa tạo: HTTP 400: {"code":4,"details":{},"message":"The file “status.json” couldn’t be opened because there is no such file."}
+[22:30:16] API started http://127.0.0.1:8788/api/status
+[22:30:16] Đã nạp config: E:\OpenClaw\Safari\machines.txt
+[22:32:20] API started http://127.0.0.1:8788/api/status
+[22:32:20] Đã nạp config: E:\OpenClaw\Safari\machines.txt
+[22:32:26] Đã nạp config: E:\OpenClaw\Safari\machines.txt
+[22:33:29] [114] FAIL pull Safari 192.14.5.114 | status.json chưa tạo: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool_status.json” couldn’t be opened because there is no such file."}
+[22:33:32] Đã lưu config: E:\OpenClaw\Safari\machines.txt
+[22:46:53] API started http://127.0.0.1:8788/api/status
+[22:46:53] Đã nạp config: E:\OpenClaw\Safari\machines.txt
+[22:47:55] [114] ERROR pull: timed out
+[22:49:00] [114] ERROR pull: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[22:49:15] [114] ERROR pull: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[22:49:44] [114] FAIL pull Safari 192.14.5.114 | status.json chưa tạo: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool_status.json” couldn’t be opened because there is no such file."}
+[22:53:28] API started http://127.0.0.1:8788/api/status
+[22:53:28] Đã nạp config: E:\OpenClaw\Safari\machines.txt
+[22:53:50] [114] OK pull 192.14.5.114 -> E:\OpenClaw\Safari\downloads\114\Cookies.binarycookies (5378 bytes)
+[23:17:36] [115] FAIL pull Safari 192.14.5.115 | status chưa tạo, xem launch log: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool_status.txt” couldn’t be opened because there is no such file."}
+[23:18:08] [115] FAIL pull Safari 192.14.5.115 | status chưa tạo, xem launch log: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool_status.txt” couldn’t be opened because there is no such file."}
+[23:18:39] API started http://127.0.0.1:8788/api/status
+[23:18:39] Đã nạp config: E:\OpenClaw\Safari\machines.txt
+[23:19:29] [115] ERROR pull: timed out
+[23:21:02] [115] ERROR pull: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[23:21:03] [115] ERROR pull: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+[23:22:06] [115] FAIL pull Safari 192.14.5.115 | status chưa tạo, xem launch log: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool_status.txt” couldn’t be opened because there is no such file."}
+[23:22:22] [115] FAIL pull Safari 192.14.5.115 | status chưa tạo, xem launch log: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool_status.txt” couldn’t be opened because there is no such file."}
+[23:24:31] API started http://127.0.0.1:8788/api/status
+[23:24:31] Đã nạp config: E:\OpenClaw\Safari\machines.txt
+[23:24:55] [115] FAIL resolve Safari 192.14.5.115 | status chưa tạo: HTTP 400: {"code":4,"details":{},"message":"The file “safari_file_tool_status.txt” couldn’t be opened because there is no such file."}
+[23:52:32] API started http://127.0.0.1:8788/api/status
+[23:52:32] Đã nạp config: E:\OpenClaw\Safari\machines.txt

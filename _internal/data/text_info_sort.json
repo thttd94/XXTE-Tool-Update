@@ -1,0 +1,46 @@
+{
+  "1936148277632": {
+    "sort_col": "checkin",
+    "sort_reverse": true
+  },
+  "2274687395968": {
+    "sort_col": "checkin",
+    "sort_reverse": true
+  },
+  "3118500947968": {
+    "sort_col": "checkin",
+    "sort_reverse": true
+  },
+  "1627448996352": {
+    "sort_col": "checkin",
+    "sort_reverse": true
+  },
+  "1880675265344": {
+    "sort_col": "checkin",
+    "sort_reverse": true
+  },
+  "2765774334272": {
+    "sort_col": "checkin",
+    "sort_reverse": true
+  },
+  "1599916419520": {
+    "sort_col": "checkin",
+    "sort_reverse": true
+  },
+  "2898155386304": {
+    "sort_col": "machine",
+    "sort_reverse": false
+  },
+  "2034751141376": {
+    "sort_col": "machine",
+    "sort_reverse": true
+  },
+  "2345378871296": {
+    "sort_col": "machine",
+    "sort_reverse": true
+  },
+  "1550601571136": {
+    "sort_col": "checkin",
+    "sort_reverse": false
+  }
+}

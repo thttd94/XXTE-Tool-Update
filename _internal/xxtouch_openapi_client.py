@@ -191,16 +191,19 @@ return true
                     continue
         return storage
 
-    def download_text_file(self, filename: str):
+    def download_file(self, filename: str) -> bytes:
         if not self.base_url:
             raise XXTouchOpenAPIError('Missing base_url')
         quoted = urllib.parse.quote(filename, safe='')
         req = urllib.request.Request(self.base_url + '/download_file?filename=' + quoted, method='GET')
         try:
             with self._open_request(req) as resp:
-                return resp.read().decode('utf-8', 'replace')
+                return resp.read()
         except urllib.error.HTTPError as e:
             detail = e.read().decode('utf-8', 'replace')
             raise XXTouchOpenAPIError(f'HTTP {e.code}: {detail}')
         except Exception as e:
             raise XXTouchOpenAPIError(str(e))
+
+    def download_text_file(self, filename: str):
+        return self.download_file(filename).decode('utf-8', 'replace')

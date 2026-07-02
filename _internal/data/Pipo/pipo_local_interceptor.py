@@ -7,6 +7,7 @@ import urllib.request, urllib.error
 
 STATE = {}
 DEBUG_LOG = Path(__file__).with_name('localpp_debug_flows.jsonl')
+PARAM_LOG = Path(__file__).with_name('pipo_params_capture.jsonl')
 
 SENSITIVE_KEYS = re.compile(r'(?i)(token|cookie|session|authorization|passport|odin|email|mail|phone|card|name)')
 EMAIL_RE = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')
@@ -55,6 +56,60 @@ def find_jsonish(text):
     except Exception:
         pass
     return None
+
+def _walk_pick(obj, out):
+    keys = {
+        'order_id','detail_id','instrument_id','merchant_user_id','merchant_id',
+        'payment_method','amount','product_id','token_amount','cashier_url',
+        'confirm_url','notify_url','device_id','brand','currency','country_code',
+    }
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            lk = str(k)
+            if lk in keys and v not in (None, ''):
+                out[lk] = v
+            _walk_pick(v, out)
+    elif isinstance(obj, list):
+        for v in obj:
+            _walk_pick(v, out)
+
+def capture_params(kind, flow, body=''):
+    try:
+        url = flow.request.pretty_url or ''
+        host = flow.request.host or ''
+        if not any(x in host for x in ('pipopay.com','polaris-sg-api.byteintl.net','giftee')):
+            return
+        p = urlparse(url)
+        qs = {k: v[-1] for k, v in parse_qs(p.query).items() if v}
+        picked = {}
+        for k in ('fp_token','fp_scene_tn','order_id','device_id','aid','brand','country_code','currency','page_enter_from'):
+            if qs.get(k): picked[k] = qs[k]
+        j = find_jsonish(body)
+        if j is not None:
+            _walk_pick(j, picked)
+        if not picked:
+            return
+        obj = {
+            'ts': time.strftime('%H:%M:%S'),
+            'kind': kind,
+            'method': flow.request.method,
+            'url': url,
+            'path': p.path,
+            'status': flow.response.status_code if getattr(flow, 'response', None) else None,
+            'params': picked,
+        }
+        with PARAM_LOG.open('a', encoding='utf-8', errors='ignore') as f:
+            f.write(json.dumps(obj, ensure_ascii=False) + '\n')
+        # Emit compact line into XXTE GUI log for quick copy.
+        keys = ['order_id','fp_scene_tn','fp_token','instrument_id','merchant_user_id','merchant_id','product_id','token_amount','device_id']
+        brief = {k: picked.get(k) for k in keys if picked.get(k)}
+        if brief:
+            emit('PIPO_PARAMS ' + json.dumps(brief, ensure_ascii=False, separators=(',', ':')))
+    except Exception as e:
+        try:
+            emit('PIPO_PARAMS_ERR %s: %s' % (type(e).__name__, e))
+        except Exception:
+            pass
 
 
 def walk(obj, out):
@@ -223,6 +278,7 @@ def request(flow):
         except Exception:
             pass
         debug_flow('request', flow, req)
+        capture_params('request', flow, req)
         update_state(flow, req, '')
 
 def response(flow):
@@ -232,4 +288,5 @@ def response(flow):
         resp = get_text(flow.response) if flow.response else ''
         # Observe only; do not force UI denomination. Old Pipo withdraws full amount via capture path.
         debug_flow('response', flow, resp)
+        capture_params('response', flow, resp)
         update_state(flow, req, resp)

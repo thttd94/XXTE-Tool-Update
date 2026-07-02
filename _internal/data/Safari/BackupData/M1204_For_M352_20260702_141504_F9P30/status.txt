@@ -1,0 +1,2 @@
+ok=0
+error=no data_path for com.ss.iphone.ugc.tiktok.lite
